@@ -1,0 +1,675 @@
+@charset "utf-8";
+
+/*---------------------------------------------------------------*/
+/*-- reset style ------------------------------------------------*/
+/*---------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/*---------------------------------------------------------------*/
+/*-- base style -------------------------------------------------*/
+/*---------------------------------------------------------------*/
+html {
+    overflow-y: scroll;
+}
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 90%;
+    color: #333;
+    background: url(../images/front/setucocms/bg_body.gif) repeat;
+    background-color: #0acece;
+    line-height: 1.5;
+    text-align: center;
+}
+a{
+    /* macIEには効かせない */
+    /* \*/
+    overflow:hidden;
+    /* */
+}
+a:link , a:visited {
+    color: #336699;
+}
+a:hover , a:active {
+    color: #33cc33;
+    text-decoration: none;
+}
+pre {
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: pre-wrap;      /* CSS3 */
+    word-wrap: break-word;      /* IE 5.5+ */
+}
+input:hover {
+    filter:Alpha(opacity:80%);
+    opacity: 0.8;
+}
+
+/*---------------------------------------------------------------*/
+/*-- wrapper style ----------------------------------------------*/
+/*---------------------------------------------------------------*/
+div#wrapper {
+    width: 90%;
+    min-width: 900px;
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/*---------------------------------------------------------------*/
+/*-- HEADER style -----------------------------------------------*/
+/*---------------------------------------------------------------*/
+div#header_innerL div#header_innerR div#header_inner {
+    background: url(../images/front/setucocms/bg_header.png) no-repeat right top;
+    min-height: 214px;
+    zoom: 100%;
+    margin-bottom: -2px;
+}
+div#header_inner:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+    clear: both;
+}
+div#header_inner h1 {
+    text-indent: -9999px;
+    padding: 22px 0;
+}
+div#header_inner h1 a {
+    background: url(../images/front/setucocms/logo.png) no-repeat left center;
+    width: 577px;
+    height: 87px;
+    display: block;
+}
+div#header_inner h1 a:hover {
+    filter: Alpha(opacity:80%);
+    opacity: 0.8;
+}
+div#header_inner p#descript {
+    background: url(../images/front/setucocms/txt_descript.png) no-repeat left center;
+    text-indent: -9999px;
+    float: left;
+    display: block;
+    width: 328px;
+    height: 21px;
+    margin-bottom: 20px;
+}
+div#header_inner ul#utility {
+    float: left;
+    margin-top: -5px;
+    padding-left: 85px
+}
+div#header_inner ul#utility li {
+    float: left;
+    margin-right: 12px
+}
+
+/*---------------------------------------------------------------*/
+/*-- content style ----------------------------------------------*/
+/*---------------------------------------------------------------*/
+div#content {
+    zoom: 100%;
+    margin-bottom: 10px;
+}
+div#content:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+    clear: both;
+}
+
+/*---------------------------------------------------------------*/
+/*-- subContent style ------------------------------------------*/
+/*---------------------------------------------------------------*/
+div#subContent {
+    width: 250px;
+    float: left;
+    margin-right: -250px;
+}
+
+/*---------------------------------------------------------------*/
+/*-- navArea style ----------------------------------------------*/
+/*---------------------------------------------------------------*/
+div#navArea ,
+div#navArea a {
+    color: #fff;
+}
+div#navArea div.navList {
+    margin-top: 50px;
+    zoom: 100%;
+}
+div#navArea div.navList:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+    clear: both;
+}
+div.navList h3 {
+    margin-bottom: 17px;
+}
+div.navList ul {
+    padding-left: 4px;
+}
+div.navList ul li {
+    list-style: disc inside;
+    margin-bottom: 6px;
+}
+div.navList ul li a {
+    margin-left: -17px;
+    padding-left: 17px;
+}
+div.navList p.linkText {
+    background: url(../images/front/setucocms/bg_linkText.png) no-repeat left center;
+    float: right;
+    margin-top: 28px;
+}
+div.navList p.linkText a {
+    padding-left: 17px;
+}
+
+/*---------------------------------------------------------------*/
+/*--  WRITER LIST style   ---------------------------------------*/
+/*---------------------------------------------------------------*/
+div.navList ul.writerList {
+    margin-right: -20px;
+    padding-left: 0;
+}
+div.navList ul.writerList li {
+    list-style: none;
+    float: left;
+    margin: 0 20px 20px 0;
+    line-height: 0.8;
+}
+div.navList ul.writerList li a {
+    margin-left: 0;
+    padding-left: 0;
+}
+div.navList ul.writerList li a img {
+    background: url(../images/front/setucocms/writer/bg_writer.png) no-repeat left top;
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+/*---------------------------------------------------------------*/
+/*-- SEARCH style（検索） ---------------------------------------*/
+/*---------------------------------------------------------------*/
+div#navArea form {
+    zoom: 100%;
+}
+div#navArea form:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+    clear: both;
+}
+div#navArea form dl dt {
+    display: block;
+    height: 0;
+    text-indent: -9999px;
+}
+div#navArea form dl dd ,
+div#navArea form p {
+    float: left;
+}
+div#navArea form dl dd {
+    background: url(../images/front/setucocms/bg_search.png) no-repeat 0 0;
+    margin-right: 10px;
+    padding: 10px 0 0 8px;
+    width: 198px;
+    height: 25px;
+}
+div#navArea form dl dd input {
+    border: none;
+    background: none;
+    display: block;
+    width: 190px;
+}
+div#navArea form p input {
+    background: url(../images/front/setucocms/btn_search.png) no-repeat 0 0;
+    border: none;
+    display: block;
+    width: 34px;
+    height: 34px;
+    text-indent: -9999px;
+    cursor:pointer;
+}
+
+/*---------------------------------------------------------------*/
+/*-- tagCloud style ---------------------------------------------*/
+/*---------------------------------------------------------------*/
+ul#tagCloud {
+    margin-bottom: 6px;
+    zoom: 100%;
+}
+ul#tagCloud:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+    clear: left;
+}
+div#navArea div.navList ul#tagCloud li {
+    margin-right: 5px;
+    margin-bottom: 3px;
+    display: inline;
+}
+div#navArea div.navList ul#tagCloud li a {
+    margin-bottom: 0;
+    padding-left: 0;
+    background: none;
+    display: inline;
+}
+ul#tagCloud li.level10 a {
+    font-size: 80%;
+}
+ul#tagCloud li.level9 a {
+    font-size: 90%;
+}
+ul#tagCloud li.level8 a {
+    font-size: 100%;
+}
+ul#tagCloud li.level7 a {
+    font-size: 110%;
+}
+ul#tagCloud li.level6 a {
+    font-size: 120%;
+}
+ul#tagCloud li.level5 a {
+    font-size: 130%;
+}
+ul#tagCloud li.level4 a {
+    font-size: 140%;
+}
+ul#tagCloud li.level3 a {
+    font-size: 150%;
+    font-weight: bold;
+}
+ul#tagCloud li.level2 a {
+    font-size: 160%;
+    font-weight: bold;
+}
+ul#tagCloud li.level1 a {
+    font-size: 170%;
+    font-weight: bold;
+}
+ul#tagCloud li.level1 a:link ,
+ul#tagCloud li.level1 a:visited {
+    color: #144f8b;
+}
+ul#tagCloud li.level1 a:hover ,
+ul#tagCloud li.level1 a:active {
+    color:#33CC33;
+}
+
+/*---------------------------------------------------------------*/
+/*-- mainContent style ------------------------------------------*/
+/*---------------------------------------------------------------*/
+div#mainContent {
+    width: 100%;
+    float: right;
+}
+
+/*---------------------------------------------------------------*/
+/*-- entry style ------------------------------------------------*/
+/*---------------------------------------------------------------*/
+div.entry {
+    margin-left: 310px;
+    margin-bottom: 130px;
+    padding-right: 29px;
+    background: url(../images/front/setucocms/bg_entry_top_right.png) no-repeat right top;
+    position: relative;
+}
+div.entry div.entry {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-top: 32px;
+    padding-right: 0;
+    background: url(../images/front/setucocms/bg_entry_top_left.png) no-repeat left top;
+}
+div.entry div.entry div.entry {
+    padding-top: 0;
+    background: url(../images/front/setucocms/bg_entry_bottom_left.png) no-repeat left bottom;
+}
+div.entry div.entry div.entry div.entry {
+    background: url(../images/front/setucocms/bg_entry_bottom_right.png) no-repeat right bottom;
+    margin-right: -29px;
+    padding-bottom: 32px;
+}
+div.entry div.entry div.entry div.entry div.entry {
+    background: url(../images/front/setucocms/bg_entry_center_left.gif) repeat-y left top;
+    margin-right: 0;
+    padding-left: 29px;
+    padding-bottom: 0;
+}
+div.entry div.entry div.entry div.entry div.entry div.entry {
+    background: url(../images/front/setucocms/bg_entry_center_right.gif) repeat-y right top;
+    background-color: #fff;
+    padding-left: 0;
+    padding-right: 29px;
+}
+div.entry p.backTop {
+    margin-top: 15px;
+    text-align: right;
+}
+div.entry table td {
+    vertical-align: top;
+}
+
+/*---------------------------------------------------------------*/
+/*-- entryHead style --------------------------------------------*/
+/*---------------------------------------------------------------*/
+div.entryHead {
+    zoom: 100%;
+}
+div.entryHead:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+    clear: both;
+}
+div.entryHead h2 {
+    float: right;
+    background: url(../images/front/setucocms/bg_entryTitle.gif) no-repeat 76px 0;
+    width: 100%;
+    min-height: 54px;
+    font-size: 110%;
+}
+div.entryHead h2 span {
+    margin-left: 76px;
+    padding: 16px 15px 16px 28px;
+    display: block;
+}
+div.entryHead p {
+    float: left;
+    width: 70px;
+    margin-top: 2px;
+    margin-right: -76px;
+}
+div.entryHead p a img {
+    background: url(../images/front/setucocms/writer/bg_writer.png) no-repeat left top;
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+div.entryHead dl.entryInfo {
+    clear: both;
+    float: left;
+    margin-top: -12px;
+    margin-left: 90px;
+    display: inline;
+}
+div.entryHead dt,
+div.entryHead dd {
+    float: left;
+    font-size: 75%;
+}
+div.entryHead dt {
+    text-indent: -9999px;
+}
+div.entryHead dd {
+    margin-right: 15px;
+}
+div.entryHead dd.date {
+    margin-left: 5px;
+    padding-top: 1px;
+}
+div.entryHead dt.date {
+    background: url(../images/front/setucocms/icn_date.gif) no-repeat left top;
+    width: 15px;
+    height: 16px;
+}
+div.entryHead dd.author a {
+    background: url(../images/front/setucocms/icn_author.gif) no-repeat left center;
+    height: 17px;
+    padding-left: 17px;
+    display: block;
+}
+div.entryHead dd.author a {
+    background: url(../images/front/setucocms/icn_author.gif) no-repeat left center;
+    height: 17px;
+    padding-left: 17px;
+    display: block;
+}
+div.entryHead dd.category a {
+    background: url(../images/front/setucocms/icn_category.gif) no-repeat left center;
+    height: 14px;
+    padding-left: 20px;
+    display: block;
+}
+div.entryHead dl.entryComments {
+    float: right;
+    margin-top: -12px;
+}
+div.entryHead dd.comment {
+    margin-right: 0;
+}
+div.entryHead dd.comment a {
+    background: url(../images/front/setucocms/icn_comment.gif) no-repeat left center;
+    height: 15px;
+    padding-left: 21px;
+    display: block;
+}
+div.entryHead dl.entryTags {
+    clear: both;
+    float: right;
+    margin: 15px 0;
+}
+div.entryHead dd.tag {
+    background-color: #eee;
+    margin-right: 0;
+    margin-left: 15px;
+    padding: 5px 8px;
+}
+
+/*---------------------------------------------------------------*/
+/*-- ENTRY BODY style -------------------------------------------*/
+/*---------------------------------------------------------------*/
+div.entryBody {
+}
+div.entryBody h3 {
+    font-size: 120%;
+    color: #3399cc;
+    border-left: solid 8px #3399cc;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+div.entryBody h4 {
+    font-size: 100%;
+    color: #3399cc;
+    margin-bottom: 5px;
+}
+div.entryBody p {
+    padding-bottom: 10px;
+    max-width: 40em;
+}
+
+/* -- LIST -- */
+div.entryBody li {
+    margin-bottom: 5px;
+    list-style-position: inside;
+}
+div.entryBody ul.list li {
+    list-style-type: disc;
+    margin-left: 3px;
+}
+
+/* -- PHOTO -- */
+div.entryBody div.entryPhoto {
+    margin: 20px 0;
+    zoom: 100%;
+}
+div.entryBody div.entryPhoto:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+    clear: left;
+}
+div.entryBody div.entryPhoto p {
+    float: left;
+    margin-right: 1em;
+}
+div.entryBody div.entryPhoto p a img{
+    border: solid 1px #3399cc;
+    margin-bottom: 5px;
+}
+div.entryBody div.entryPhoto p a:hover img{
+    border: solid 1px #33cc33;
+}
+
+/*---------------------------------------------------------------*/
+/*-- ENTRY Foot style  ------------------------------------------*/
+/*---------------------------------------------------------------*/
+div.entry p.moreRead a {
+    background: url(../images/front/setucocms/bg_moreread.png) no-repeat left center;
+    width: 202px;
+    height: 58px;
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    left: -31px;
+    bottom: -77px;
+    z-index: 10;
+}
+div.entry div.socialButton {
+    background: url(../images/front/setucocms/bg_social.png) no-repeat left center;
+    width: 445px;
+    height: 100px;
+    position: absolute;
+    right: -60px;
+    bottom: -115px;
+    z-index: 0;
+    zoom:100%;
+}
+div.entry div.socialButton ul {
+    padding-top: 48px;
+}
+div.entry div.socialButton ul li {
+    float: left;
+}
+div.socialButton:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+    clear: both;
+}
+
+
+/*---------------------------------------------------------------*/
+/*-- pageNav style ----------------------------------------------*/
+/*---------------------------------------------------------------*/
+div#pageNav {
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 310px;
+}
+div#pageNav ul {
+    margin: 0 auto;
+    zoom:100%;
+}
+div#pageNav ul:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+    clear: both;
+}
+div#pageNav ul li {
+    float: left;
+    margin-right: 15px;
+}
+div#pageNav ul li a ,
+div#pageNav ul li span {
+    display: block;
+}
+div#pageNav ul li.navPrev a ,
+div#pageNav ul li.navNext a {
+    text-indent: -9999px;
+    width: 27px;
+    height: 38px;
+}
+div#pageNav ul li.navPrev a {
+    background: url(../images/front/setucocms/bg_pageNav_prev.png) no-repeat left center;
+    margin-right: 10px;
+}
+div#pageNav ul li.navNext a {
+    background: url(../images/front/setucocms/bg_pageNav_next.png) no-repeat left center;
+    margin-left: 10px;
+}
+div#pageNav ul li.navNumber {
+    margin-top: 2px;
+}
+div#pageNav ul li.navNumber a ,
+div#pageNav ul li.navNumber span  {
+    background: url(../images/front/setucocms/bg_pageNav_number.png) no-repeat left center;
+    width: 35px;
+    height: 28px;
+    padding-top: 6px;
+}
+div#pageNav ul li.current span {
+    background: url(../images/front/setucocms/bg_pageNav_numberCurrent.png) no-repeat left center;
+}
+
+/*---------------------------------------------------------------*/
+/*-- FOOTER style -----------------------------------------------*/
+/*---------------------------------------------------------------*/
+/* -- backTop -- */
+
+/* -- copyright -- */
+p#copyright {
+    text-align: right;
+    color: #fff;
+    background-color: #3399cc;
+    padding: 0.8em 1em;
+}
+
+/*---------------------------------------------------------------*/
+/*-- errorPage style --------------------------------------------*/
+/*---------------------------------------------------------------*/
+body#errorPage div#content div#mainContent {
+    width: 800px;
+    max-width: 100%;
+    float: none;
+}
+body#errorPage div#content div#mainContent div.entry {
+    min-height: 150px;
+}
+body#errorPage div#content div#mainContent div.entryBody p {
+    max-width: 100%;
+}
