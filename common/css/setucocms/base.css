@@ -190,6 +190,9 @@ div#navArea div.navList:after {
 	line-height: 0;
 	clear: both;
 }
+div.navList p {
+	line-height:1.7;
+}
 div.navList h3 {
 	margin-bottom: 17px;
 }
@@ -197,17 +200,18 @@ div.navList ul {
 	padding-left: 4px;
 }
 div.navList ul li {
-	list-style: disc inside;
+	background: url(/common/images/front/setucocms/bg_navlist_list.png) no-repeat left center;
 	margin-bottom: 6px;
+	line-height:1.6;
 }
-div.navList ul li a {
-	margin-left: -17px;
-	padding-left: 17px;
+div.navList ul li a,
+div.navList ul li span{
+	padding-left: 12px;
 }
 div.navList p.linkText {
 	background: url(/common/images/front/setucocms/bg_linkText.png) no-repeat left center;
 	float: right;
-	margin-top: 28px;
+	margin-top: 20px;
 }
 div.navList p.linkText a {
 	padding-left: 17px;
@@ -225,9 +229,10 @@ div.navList ul.writerList li {
 	float: left;
 	margin: 0 20px 20px 0;
 	line-height: 0.8;
+	font-size: 85%;
 }
-div.navList ul.writerList li a {
-	margin-left: 0;
+div.navList ul.writerList li a,
+div.navList ul.writerList li span {
 	padding-left: 0;
 }
 div.navList ul.writerList li a img {
