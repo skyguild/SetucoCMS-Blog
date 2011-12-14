@@ -30,11 +30,10 @@ html {
     overflow-y: scroll;
 }
 body {
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-size: 90%;
     color: #333;
     background: url(/common/images/front/setucocms/bg_body.gif) repeat 0 0 !important;
-    line-height: 1.5;
     text-align: center;
 }
 a{
