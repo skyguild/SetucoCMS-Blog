@@ -1,18 +1,26 @@
 @charset "utf-8";
 
 /*---------------------------------------------------------------*/
+/*-- html5 set style --------------------------------------------*/
+/*---------------------------------------------------------------*/
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/*---------------------------------------------------------------*/
 /*-- reset style ------------------------------------------------*/
 /*---------------------------------------------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-}
 ul li {
     list-style: none;
-}
-img {
-    border: none;
-    vertical-align: bottom;
 }
 
 /*---------------------------------------------------------------*/
@@ -25,8 +33,7 @@ body {
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-size: 90%;
     color: #333;
-    background: url(../images/front/setucocms/bg_body.gif) repeat;
-    background-color: #0acece;
+    background: url(/common/images/front/setucocms/bg_body.gif) repeat 0 0 !important;
     line-height: 1.5;
     text-align: center;
 }
@@ -70,7 +77,7 @@ div#wrapper {
 /*-- HEADER style -----------------------------------------------*/
 /*---------------------------------------------------------------*/
 div#header_innerL div#header_innerR div#header_inner {
-    background: url(../images/front/setucocms/bg_header.png) no-repeat right top;
+    background: url(/common/images/front/setucocms/bg_header.png) no-repeat right top;
     min-height: 214px;
     zoom: 100%;
     margin-bottom: -2px;
@@ -89,7 +96,7 @@ div#header_inner h1 {
     padding: 22px 0;
 }
 div#header_inner h1 a {
-    background: url(../images/front/setucocms/logo.png) no-repeat left center;
+    background: url(/common/images/front/setucocms/logo.png) no-repeat left center;
     width: 577px;
     height: 87px;
     display: block;
@@ -99,7 +106,7 @@ div#header_inner h1 a:hover {
     opacity: 0.8;
 }
 div#header_inner p#descript {
-    background: url(../images/front/setucocms/txt_descript.png) no-repeat left center;
+    background: url(/common/images/front/setucocms/txt_descript.png) no-repeat left center;
     text-indent: -9999px;
     float: left;
     display: block;
@@ -178,7 +185,7 @@ div.navList ul li a {
     padding-left: 17px;
 }
 div.navList p.linkText {
-    background: url(../images/front/setucocms/bg_linkText.png) no-repeat left center;
+    background: url(/common/images/front/setucocms/bg_linkText.png) no-repeat left center;
     float: right;
     margin-top: 28px;
 }
@@ -204,7 +211,7 @@ div.navList ul.writerList li a {
     padding-left: 0;
 }
 div.navList ul.writerList li a img {
-    background: url(../images/front/setucocms/writer/bg_writer.png) no-repeat left top;
+    background: url(/common/images/front/setucocms/writer/bg_writer.png) no-repeat left top;
     width: 70px;
     height: 70px;
     display: block;
@@ -235,7 +242,7 @@ div#navArea form p {
     float: left;
 }
 div#navArea form dl dd {
-    background: url(../images/front/setucocms/bg_search.png) no-repeat 0 0;
+    background: url(/common/images/front/setucocms/bg_search.png) no-repeat 0 0;
     margin-right: 10px;
     padding: 10px 0 0 8px;
     width: 198px;
@@ -248,7 +255,7 @@ div#navArea form dl dd input {
     width: 190px;
 }
 div#navArea form p input {
-    background: url(../images/front/setucocms/btn_search.png) no-repeat 0 0;
+    background: url(/common/images/front/setucocms/btn_search.png) no-repeat 0 0;
     border: none;
     display: block;
     width: 34px;
@@ -341,7 +348,7 @@ div.entry {
     margin-left: 310px;
     margin-bottom: 130px;
     padding-right: 29px;
-    background: url(../images/front/setucocms/bg_entry_top_right.png) no-repeat right top;
+    background: url(/common/images/front/setucocms/bg_entry_top_right.png) no-repeat right top;
     position: relative;
 }
 div.entry div.entry {
@@ -349,25 +356,25 @@ div.entry div.entry {
     margin-bottom: 0;
     padding-top: 32px;
     padding-right: 0;
-    background: url(../images/front/setucocms/bg_entry_top_left.png) no-repeat left top;
+    background: url(/common/images/front/setucocms/bg_entry_top_left.png) no-repeat left top;
 }
 div.entry div.entry div.entry {
     padding-top: 0;
-    background: url(../images/front/setucocms/bg_entry_bottom_left.png) no-repeat left bottom;
+    background: url(/common/images/front/setucocms/bg_entry_bottom_left.png) no-repeat left bottom;
 }
 div.entry div.entry div.entry div.entry {
-    background: url(../images/front/setucocms/bg_entry_bottom_right.png) no-repeat right bottom;
+    background: url(/common/images/front/setucocms/bg_entry_bottom_right.png) no-repeat right bottom;
     margin-right: -29px;
     padding-bottom: 32px;
 }
 div.entry div.entry div.entry div.entry div.entry {
-    background: url(../images/front/setucocms/bg_entry_center_left.gif) repeat-y left top;
+    background: url(/common/images/front/setucocms/bg_entry_center_left.gif) repeat-y left top;
     margin-right: 0;
     padding-left: 29px;
     padding-bottom: 0;
 }
 div.entry div.entry div.entry div.entry div.entry div.entry {
-    background: url(../images/front/setucocms/bg_entry_center_right.gif) repeat-y right top;
+    background: url(/common/images/front/setucocms/bg_entry_center_right.gif) repeat-y right top;
     background-color: #fff;
     padding-left: 0;
     padding-right: 29px;
@@ -397,7 +404,7 @@ div.entryHead:after {
 }
 div.entryHead h2 {
     float: right;
-    background: url(../images/front/setucocms/bg_entryTitle.gif) no-repeat 76px 0;
+    background: url(/common/images/front/setucocms/bg_entryTitle.gif) no-repeat 76px 0;
     width: 100%;
     min-height: 54px;
     font-size: 110%;
@@ -414,7 +421,7 @@ div.entryHead p {
     margin-right: -76px;
 }
 div.entryHead p a img {
-    background: url(../images/front/setucocms/writer/bg_writer.png) no-repeat left top;
+    background: url(/common/images/front/setucocms/writer/bg_writer.png) no-repeat left top;
     width: 70px;
     height: 70px;
     display: block;
@@ -442,24 +449,24 @@ div.entryHead dd.date {
     padding-top: 1px;
 }
 div.entryHead dt.date {
-    background: url(../images/front/setucocms/icn_date.gif) no-repeat left top;
+    background: url(/common/images/front/setucocms/icn_date.gif) no-repeat left top;
     width: 15px;
     height: 16px;
 }
 div.entryHead dd.author a {
-    background: url(../images/front/setucocms/icn_author.gif) no-repeat left center;
+    background: url(/common/images/front/setucocms/icn_author.gif) no-repeat left center;
     height: 17px;
     padding-left: 17px;
     display: block;
 }
 div.entryHead dd.author a {
-    background: url(../images/front/setucocms/icn_author.gif) no-repeat left center;
+    background: url(/common/images/front/setucocms/icn_author.gif) no-repeat left center;
     height: 17px;
     padding-left: 17px;
     display: block;
 }
 div.entryHead dd.category a {
-    background: url(../images/front/setucocms/icn_category.gif) no-repeat left center;
+    background: url(/common/images/front/setucocms/icn_category.gif) no-repeat left center;
     height: 14px;
     padding-left: 20px;
     display: block;
@@ -472,7 +479,7 @@ div.entryHead dd.comment {
     margin-right: 0;
 }
 div.entryHead dd.comment a {
-    background: url(../images/front/setucocms/icn_comment.gif) no-repeat left center;
+    background: url(/common/images/front/setucocms/icn_comment.gif) no-repeat left center;
     height: 15px;
     padding-left: 21px;
     display: block;
@@ -552,7 +559,7 @@ div.entryBody div.entryPhoto p a:hover img{
 /*-- ENTRY Foot style  ------------------------------------------*/
 /*---------------------------------------------------------------*/
 div.entry p.moreRead a {
-    background: url(../images/front/setucocms/bg_moreread.png) no-repeat left center;
+    background: url(/common/images/front/setucocms/bg_moreread.png) no-repeat left center;
     width: 202px;
     height: 58px;
     text-indent: -9999px;
@@ -563,7 +570,7 @@ div.entry p.moreRead a {
     z-index: 10;
 }
 div.entry div.socialButton {
-    background: url(../images/front/setucocms/bg_social.png) no-repeat left center;
+    background: url(/common/images/front/setucocms/bg_social.png) no-repeat left center;
     width: 445px;
     height: 100px;
     position: absolute;
@@ -625,11 +632,11 @@ div#pageNav ul li.navNext a {
     height: 38px;
 }
 div#pageNav ul li.navPrev a {
-    background: url(../images/front/setucocms/bg_pageNav_prev.png) no-repeat left center;
+    background: url(/common/images/front/setucocms/bg_pageNav_prev.png) no-repeat left center;
     margin-right: 10px;
 }
 div#pageNav ul li.navNext a {
-    background: url(../images/front/setucocms/bg_pageNav_next.png) no-repeat left center;
+    background: url(/common/images/front/setucocms/bg_pageNav_next.png) no-repeat left center;
     margin-left: 10px;
 }
 div#pageNav ul li.navNumber {
@@ -637,13 +644,13 @@ div#pageNav ul li.navNumber {
 }
 div#pageNav ul li.navNumber a ,
 div#pageNav ul li.navNumber span  {
-    background: url(../images/front/setucocms/bg_pageNav_number.png) no-repeat left center;
+    background: url(/common/images/front/setucocms/bg_pageNav_number.png) no-repeat left center;
     width: 35px;
     height: 28px;
     padding-top: 6px;
 }
 div#pageNav ul li.current span {
-    background: url(../images/front/setucocms/bg_pageNav_numberCurrent.png) no-repeat left center;
+    background: url(/common/images/front/setucocms/bg_pageNav_numberCurrent.png) no-repeat left center;
 }
 
 /*---------------------------------------------------------------*/
