@@ -95,13 +95,8 @@ div.entryHead p a img {
 	height: 70px;
 	display: block;
 }
-div.entryHead dl.entryInfo {
-	clear: both;
-	float: left;
-	margin-top: -12px;
-	margin-left: 90px;
-	display: inline;
-}
+
+/* -- entryHead dl -- */
 div.entryHead dt,
 div.entryHead dd {
 	float: left;
@@ -113,52 +108,63 @@ div.entryHead dt {
 div.entryHead dd {
 	margin-right: 15px;
 }
-div.entryHead dd.date {
-	margin-left: 5px;
-	padding-top: 1px;
-}
-div.entryHead dt.date {
-	background: url(/common/images/front/setucocms/icn_date.gif) no-repeat left top;
-	width: 15px;
-	height: 16px;
-}
-div.entryHead dd.author a {
-	background: url(/common/images/front/setucocms/icn_author.gif) no-repeat left center;
-	height: 17px;
-	padding-left: 17px;
-	display: block;
-}
-div.entryHead dd.author a {
-	background: url(/common/images/front/setucocms/icn_author.gif) no-repeat left center;
-	height: 17px;
-	padding-left: 17px;
-	display: block;
-}
-div.entryHead dd.category a {
-	background: url(/common/images/front/setucocms/icn_category.gif) no-repeat left center;
-	height: 14px;
-	padding-left: 20px;
-	display: block;
-}
-div.entryHead dl.entryComments {
-	float: right;
+
+/* -- entryInfo -- */
+div.entryHead dl.entryInfo{
+	clear: both;
+	float: left;
 	margin-top: -12px;
+	margin-left: 90px;
+	display: inline;
 }
-div.entryHead dd.comment {
+dl.entryInfo dd.date{
+	height:13px;
+	padding-left:20px;
+	padding-top:3px;
+	background:url(/common/images/front/setucocms/icn_date.png) no-repeat left top;
+}
+
+dl.entryInfo dd a{
+	height:14px;
+	padding-top:3px;
+	padding-left:17px;
+	display:block;
+}
+dl.entryInfo dd.author a{
+	background:url(/common/images/front/setucocms/icn_author.png) no-repeat left center;
+}
+dl.entryInfo dd.author a{
+	background:url(/common/images/front/setucocms/icn_author.png) no-repeat left center;
+}
+dl.entryInfo dd.category a{
+	background:url(/common/images/front/setucocms/icn_category.png) no-repeat left center;
+	height:11px;
+	padding-left:20px;
+}
+
+/* -- entryComments -- */
+div.entryHead dl.entryComments{
+	float:right;
+	margin-top:-12px;
+}
+dl.entryComments dd.comment{
 	margin-right: 0;
 }
-div.entryHead dd.comment a {
-	background: url(/common/images/front/setucocms/icn_comment.gif) no-repeat left center;
-	height: 15px;
-	padding-left: 21px;
-	display: block;
+dl.entryComments dd.comment a{
+	background: url(/common/images/front/setucocms/icn_comment.png) no-repeat left center;
+	height:12px;
+	padding-top:3px;
+	padding-left:21px;
+	display:block;
 }
-div.entryHead dl.entryTags {
+
+/* -- entryTags -- */
+div.entryHead dl.entryTags{
 	clear: both;
 	float: right;
 	margin: 15px 0;
 }
-div.entryHead dd.tag {
+div.entryHead dd.tag{
 	background-color: #eee;
 	margin-right: 0;
 	margin-left: 15px;
