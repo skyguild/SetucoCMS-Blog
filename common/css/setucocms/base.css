@@ -88,13 +88,13 @@ div#wrapper {
 /*---------------------------------------------------------------*/
 /*-- HEADER style -----------------------------------------------*/
 /*---------------------------------------------------------------*/
-div#header_innerL div#header_innerR div#header_inner {
+header div#header_inner {
 	background: url(/common/images/front/setucocms/bg_header.png) no-repeat right top;
 	min-height: 214px;
 	zoom: 100%;
 	margin-bottom: -2px;
 }
-div#header_inner:after {
+header div#header_inner:after {
 	content: ".";
 	display: block;
 	visibility: hidden;
@@ -117,7 +117,7 @@ div#header_inner h1 a:hover {
 	filter: Alpha(opacity:80%);
 	opacity: 0.8;
 }
-div#header_inner p#descript {
+div#header_inner p.descript {
 	background: url(/common/images/front/setucocms/txt_descript.png) no-repeat left center;
 	text-indent: -9999px;
 	float: left;
@@ -126,12 +126,12 @@ div#header_inner p#descript {
 	height: 21px;
 	margin-bottom: 20px;
 }
-div#header_inner ul#utility {
+div#header_inner ul.utility {
 	float: left;
 	margin-top: -5px;
 	padding-left: 85px
 }
-div#header_inner ul#utility li {
+div#header_inner ul.utility li {
 	float: left;
 	margin-right: 12px
 }
