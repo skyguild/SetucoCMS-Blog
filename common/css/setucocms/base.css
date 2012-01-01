@@ -141,7 +141,6 @@ div#header_inner ul.utility li {
 /*---------------------------------------------------------------*/
 div#content {
 	zoom: 100%;
-	margin-bottom: 10px;
 }
 div#content:after {
 	content: ".";
@@ -290,13 +289,57 @@ div#navArea form p input {
 }
 
 /*---------------------------------------------------------------*/
+/*-- FOOTER style -----------------------------------------------*/
+/*---------------------------------------------------------------*/
+footer{
+	margin-top:50px;
+	padding-top:155px;
+	background:url(/common/images/front/setucocms/bg_footer.png) repeat-x center top;
+}
+footer .footer_inner{
+	position:relative;
+	width: 90%;
+	min-width:900px;
+	max-width:1180px;
+	margin:0 auto;
+	text-align:left;
+}
+
+/* -- backTop -- */
+footer .footer_inner p.backTop a{
+	position:absolute;
+	top:-138px;
+	right:-10px;
+	background: url(/common/images/front/setucocms/bg_backTop.png) no-repeat 0 0;
+	display: block;
+	width:172px;
+	height:54px;
+	text-indent: -9999px;
+}
+
+/* -- copyright -- */
+footer .copyright_area{
+	background: url(/common/images/front/setucocms/bg_copyright.png) repeat-x center top;
+	height:87px;
+}
+footer .copyright_area p.copyright{
+	width: 90%;
+	min-width:900px;
+	max-width:1180px;
+	margin:0 auto;
+	padding-top:40px;
+	text-align:right;
+	font-size:90%;
+}
+
+/*---------------------------------------------------------------*/
 /*-- tagCloud style ---------------------------------------------*/
 /*---------------------------------------------------------------*/
-ul#tagCloud {
+footer .footer_inner #tagCloud ul {
 	margin-bottom: 6px;
 	zoom: 100%;
 }
-ul#tagCloud:after {
+footer .footer_inner #tagCloud ul:after {
 	content: ".";
 	display: block;
 	visibility: hidden;
@@ -305,68 +348,55 @@ ul#tagCloud:after {
 	line-height: 0;
 	clear: left;
 }
-div#navArea div.navList ul#tagCloud li {
+#tagCloud ul li {
 	margin-right: 5px;
 	margin-bottom: 3px;
 	display: inline;
 }
-div#navArea div.navList ul#tagCloud li a {
+#tagCloud ul li a {
 	margin-bottom: 0;
 	padding-left: 0;
 	background: none;
 	display: inline;
 }
-ul#tagCloud li.level10 a {
+#tagCloud ul li.level10 a {
 	font-size: 80%;
 }
-ul#tagCloud li.level9 a {
+#tagCloud ul li.level9 a {
 	font-size: 90%;
 }
-ul#tagCloud li.level8 a {
+#tagCloud ul li.level8 a {
 	font-size: 100%;
 }
-ul#tagCloud li.level7 a {
+#tagCloud ul li.level7 a {
 	font-size: 110%;
 }
-ul#tagCloud li.level6 a {
+#tagCloud ul li.level6 a {
 	font-size: 120%;
 }
-ul#tagCloud li.level5 a {
+#tagCloud ul li.level5 a {
 	font-size: 130%;
 }
-ul#tagCloud li.level4 a {
+#tagCloud ul li.level4 a {
 	font-size: 140%;
 }
-ul#tagCloud li.level3 a {
+#tagCloud ul li.level3 a {
 	font-size: 150%;
 	font-weight: bold;
 }
-ul#tagCloud li.level2 a {
+#tagCloud ul li.level2 a {
 	font-size: 160%;
 	font-weight: bold;
 }
-ul#tagCloud li.level1 a {
+#tagCloud ul li.level1 a {
 	font-size: 170%;
 	font-weight: bold;
 }
-ul#tagCloud li.level1 a:link ,
-ul#tagCloud li.level1 a:visited {
+#tagCloud ul li.level1 a:link ,
+#tagCloud ul li.level1 a:visited {
 	color: #144f8b;
 }
-ul#tagCloud li.level1 a:hover ,
-ul#tagCloud li.level1 a:active {
+#tagCloud ul li.level1 a:hover ,
+#tagCloud ul li.level1 a:active {
 	color:#33CC33;
-}
-
-/*---------------------------------------------------------------*/
-/*-- FOOTER style -----------------------------------------------*/
-/*---------------------------------------------------------------*/
-/* -- backTop -- */
-
-/* -- copyright -- */
-p#copyright {
-	text-align: right;
-	color: #fff;
-	background-color: #3399cc;
-	padding: 0.8em 1em;
 }
