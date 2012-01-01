@@ -186,6 +186,7 @@ div.entryBody h4 {
 div.entryBody p {
 	padding-bottom: 10px;
 	max-width: 40em;
+	line-height:1.5;
 }
 
 /* -- LIST -- */
@@ -274,6 +275,7 @@ div#pageNav {
 }
 div#pageNav ul {
 	margin: 0 auto;
+	display:inline-block;
 	zoom:100%;
 }
 div#pageNav ul:after {
@@ -286,8 +288,8 @@ div#pageNav ul:after {
 	clear: both;
 }
 div#pageNav ul li {
-	float: left;
 	margin-right: 15px;
+	float:left;;
 }
 div#pageNav ul li a ,
 div#pageNav ul li span {
