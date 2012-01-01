@@ -56,11 +56,11 @@ a{
 	/* */
 }
 a:link , a:visited {
-	color: #336699;
+	color: #333;
+	text-decoration:underline;
 }
 a:hover , a:active {
-	color: #33cc33;
-	text-decoration: none;
+	text-decoration:none;
 }
 pre {
 	white-space: -moz-pre-wrap; /* Mozilla */
@@ -391,12 +391,4 @@ footer .footer_inner #tagCloud ul:after {
 #tagCloud ul li.level1 a {
 	font-size: 170%;
 	font-weight: bold;
-}
-#tagCloud ul li.level1 a:link ,
-#tagCloud ul li.level1 a:visited {
-	color: #144f8b;
-}
-#tagCloud ul li.level1 a:hover ,
-#tagCloud ul li.level1 a:active {
-	color:#33CC33;
 }
