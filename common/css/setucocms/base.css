@@ -321,6 +321,7 @@ footer .footer_inner p.backTop a{
 footer .copyright_area{
 	background: url(/common/images/front/setucocms/bg_copyright.png) repeat-x center top;
 	height:87px;
+	margin-top:30px;
 }
 footer .copyright_area p.copyright{
 	width: 90%;
@@ -335,6 +336,12 @@ footer .copyright_area p.copyright{
 /*---------------------------------------------------------------*/
 /*-- tagCloud style ---------------------------------------------*/
 /*---------------------------------------------------------------*/
+footer .footer_inner #tagCloud{
+	margin-top:10px;
+}
+footer .footer_inner #tagCloud h3{
+	margin-bottom:20px;
+}
 footer .footer_inner #tagCloud ul {
 	margin-bottom: 6px;
 	zoom: 100%;
@@ -349,21 +356,17 @@ footer .footer_inner #tagCloud ul:after {
 	clear: left;
 }
 #tagCloud ul li {
-	margin-right: 5px;
-	margin-bottom: 3px;
-	display: inline;
+	margin-right:5px;
+	margin-bottom:10px;
+	display:inline-block;
+	*display: inline;
+  *zoom: 1;
 }
-#tagCloud ul li a {
-	margin-bottom: 0;
-	padding-left: 0;
-	background: none;
-	display: inline;
-}
-#tagCloud ul li.level10 a {
-	font-size: 80%;
+#tagCloud ul li.level10 a{
+	font-size: 84%;
 }
 #tagCloud ul li.level9 a {
-	font-size: 90%;
+	font-size: 91%;
 }
 #tagCloud ul li.level8 a {
 	font-size: 100%;
