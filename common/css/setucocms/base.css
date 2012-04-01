@@ -215,7 +215,7 @@ div.navList p.linkText{
 div.navList p.linkText a{
 	padding-left:17px;
 }
-	
+
 /*---------------------------------------------------------------*/
 /*--  WRITER LIST style   ---------------------------------------*/
 /*---------------------------------------------------------------*/
@@ -268,15 +268,19 @@ div#navArea form p{
 div#navArea form dl dd{
 	background:url(/common/images/front/setucocms/bg_search.png) no-repeat 0 0;
 	margin-right:10px;
-	padding:10px 0 0 8px;
+	padding:8px 0 0 8px;
 	width:198px;
-	height:25px;
+	height:27px;
 }
 div#navArea form dl dd input{
 	border:none;
 	background:none;
 	display:block;
 	width:190px;
+	color:#999;
+}
+div#navArea form dl dd input:focus {
+	outline:none;
 }
 div#navArea form p input{
 	background:url(/common/images/front/setucocms/btn_search.png) no-repeat 0 0;
