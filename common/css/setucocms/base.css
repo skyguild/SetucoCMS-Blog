@@ -109,13 +109,12 @@ div#header_inner h1{
 }
 div#header_inner h1 a{
 	background:url(/common/images/front/setucocms/logo.png) no-repeat left center;
-	width:577px;
-	height:87px;
+	width:582px;
+	height:84px;
 	display:block;
 }
 div#header_inner h1 a:hover{
-	filter:Alpha(opacity:80%);
-	opacity:0.8;
+	background:url(/common/images/front/setucocms/logo_on.png) no-repeat left center;
 }
 div#header_inner p.descript{
 	background:url(/common/images/front/setucocms/txt_descript.png) no-repeat left center;
