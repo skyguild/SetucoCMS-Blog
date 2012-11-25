@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*-- Product Info -------------------------------------------------
+Theme Name : 日本電子専門学校電設部SetucoCMSプロジェクト
+Theme URL : http://design1.chu.jp/setucocms-pjt
+Copyright : SetucoCMS Project
+Design : Daisuke Nagai
+Code : Erina Mikami
+-----------------------------------------------------------------*/
+
+/*-- File Info ----------------------------------------------------
+content.css - 個別パーツ、個別指定を記述
+-----------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------*/
+/*-- errorPage style --------------------------------------------*/
+/*---------------------------------------------------------------*/
+body#errorPage div#content div#mainContent{
+	width:800px;
+	max-width:100%;
+	float:none;
+}
+body#errorPage div#content div#mainContent div.entry{
+	min-height:150px;
+}
+body#errorPage div#content div#mainContent div.entryBody p{
+	max-width:100%;
+}

@@ -1,56 +1,104 @@
-<?php
-/**
- * The Sidebar containing the primary and secondary widget areas.
- *
- * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
- */
-?>
 
-		<div id="primary" class="widget-area" role="complementary">
-			<ul class="xoxo">
 
-<?php
-	/* When we call the dynamic_sidebar() function, it'll spit out
-	 * the widgets for that widget area. If it instead returns false,
-	 * then the sidebar simply doesn't exist, so we'll hard-code in
-	 * some default sidebar stuff just in case.
-	 */
-	if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
-
-			<li id="search" class="widget-container widget_search">
-				<?php get_search_form(); ?>
-			</li>
-
-			<li id="archives" class="widget-container">
-				<h3 class="widget-title"><?php _e( 'Archives', 'twentyten' ); ?></h3>
-				<ul>
-					<?php wp_get_archives( 'type=monthly' ); ?>
-				</ul>
-			</li>
-
-			<li id="meta" class="widget-container">
-				<h3 class="widget-title"><?php _e( 'Meta', 'twentyten' ); ?></h3>
-				<ul>
-					<?php wp_register(); ?>
-					<li><?php wp_loginout(); ?></li>
-					<?php wp_meta(); ?>
-				</ul>
-			</li>
-
-		<?php endif; // end primary widget area ?>
-			</ul>
-		</div><!-- #primary .widget-area -->
-
-<?php
-	// A second sidebar for widgets, just because.
-	if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
-
-		<div id="secondary" class="widget-area" role="complementary">
-			<ul class="xoxo">
-				<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
-			</ul>
-		</div><!-- #secondary .widget-area -->
-
-<?php endif; ?>
+			</div> 
+			<!-- mainContent END --> 
+ 
+			<!-- subContent START --> 
+			<div id="subContent"> 
+					
+				<!-- navArea START --> 
+				<div id="navArea"> 
+ 
+					<form action="/page/search/" method="get"> 
+						<dl> 
+							<dt><label for="keyword">フリーワード検索</label></dt> 
+							<dd><input type="text" name="query" id="keyword" value="検索ワードを入力" onfocus="if (this.value == '検索ワードを入力') { this.value=''; }" onblur="if(this.value == '') { this.value='検索ワードを入力'; }" tabindex="2" /></dd> 
+						</dl> 
+						<p><input type="submit" value="検索" tabindex="3" /></p> 
+					</form>
+ 
+					<!-- navList START --> 
+					<div class="navList"> 
+						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_setucocms.png" alt="SetucoCMSとは何か" /></h3> 
+						<p>日本電子専門学校電設部有志によるCMS開発プロジェクトです。SetucoCMSのコンセプトは”自由”。サイトを制作する人に自由さと楽しさを感じてもらいたい。そんな想いを込めたほんわか系CMSです。</p>
+						<p class="linkText"><a href="#">SetucoCMSプロジェクト</a></p>
+					</div> 
+					<!-- navList END --> 
+ 
+					<!-- navList START --> 
+					<div class="navList"> 
+						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_popular.png" alt="人気のエントリー" /></h3> 
+						<ul>
+							<li><a href="#">1stリリースを迎えて-謝辞-</a></li>
+							<li><a href="#">1stリリースを迎えて-謝辞-</a></li>
+							<li><a href="#">1stリリースを迎えて-謝辞-</a></li>
+							<li><a href="#">1stリリースを迎えて-謝辞-</a></li>
+							<li><a href="#">1stリリースを迎えて-謝辞-</a></li>
+						</ul>
+					</div> 
+					<!-- navList END --> 
+ 
+					<!-- navList START --> 
+					<div class="navList"> 
+						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_category.png" alt="カテゴリー" /></h3> 
+						<ul>
+							<li><a href="#">Web制作（5）</a></li>
+							<li><span>開発技法（0）</span></li>
+							<li><a href="#">データベース（5）</a></li>
+							<li><a href="#">プログラミング（5）</a></li>
+							<li><a href="#">その他（5）</a></li>
+						</ul>
+					</div> 
+					<!-- navList END --> 
+ 
+					<!-- navList START --> 
+					<div class="navList"> 
+						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_archive.png" alt="アーカイブ" /></h3> 
+						<ul>
+							<li><a href="#">2011年6月（5）</a></li>
+							<li><a href="#">2011年6月（5）</a></li>
+							<li><a href="#">2011年6月（5）</a></li>
+							<li><a href="#">2011年6月（5）</a></li>
+							<li><a href="#">2011年6月（5）</a></li>
+							<li><a href="#">2011年6月（5）</a></li>
+							<li><a href="#">2011年6月（5）</a></li>
+							<li><a href="#">2011年6月（5）</a></li>
+							<li><a href="#">2011年6月（5）</a></li>
+							<li><a href="#">2011年6月（5）</a></li>
+						</ul>
+						<p class="linkText"><a href="#">さらに過去を表示する</a></p>
+					</div> 
+					<!-- navList END --> 
+ 
+					<!-- navList START --> 
+					<div class="navList"> 
+						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_writer.png" alt="ライター" /></h3> 
+						<ul class="writerList">
+							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /><br /><span>aki</span></a></li>
+							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_fossilcat.png" alt="" /><br /><span>fossilcat</span></a></li>
+							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_re_3_19.gif" alt="" /><br /><span>re_3_10</span></a></li>
+							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /><br /><span>skyguild</span></a></li>
+							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /><br /><span>akitsukada</span></a></li>
+							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /><br /><span>karino777</span></a></li>
+							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /><br /><span>mar</span></a></li>
+							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /><br /><span>tar-san</span></a></li>
+						</ul>
+					</div> 
+					<!-- navList END --> 
+ 
+					<!-- navList START --> 
+					<div class="navList"> 
+						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_link.png" alt="リンク" /></h3> 
+						<ul>
+							<li><a href="#">SetucoCMSプロジェクト</a></li>
+							<li><a href="#">日本電子専門学校</a></li>
+							<li><a href="#">日本電子専門学校電設部</a></li>
+						</ul>
+					</div> 
+					<!-- navList END --> 
+	 
+				 </div> 
+				<!-- navArea END --> 
+ 
+			</div> 
+			<!-- subContent END --> 

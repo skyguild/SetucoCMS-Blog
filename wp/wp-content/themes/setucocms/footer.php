@@ -1,50 +1,59 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * Contains the closing of the id=main div and all content
- * after. Calls sidebar-footer.php for bottom widgets.
- *
- * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
- */
-?>
-	</div><!-- #main -->
 
-	<div id="footer" role="contentinfo">
-		<div id="colophon">
+ 
+		</div> 
+		<!-- content END -->
 
-<?php
-	/* A sidebar in the footer? Yep. You can can customize
-	 * your footer with four columns of widgets.
-	 */
-	get_sidebar( 'footer' );
-?>
+	</div> 
+	<!-- wrapper END -->
 
-			<div id="site-info">
-				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php bloginfo( 'name' ); ?>
-				</a>
-			</div><!-- #site-info -->
+	<!-- footer START --> 
+	<footer>
+		
+		<!-- footer_inner START -->
+		<div class="footer_inner">
 
-			<div id="site-generator">
-				<?php do_action( 'twentyten_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyten' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyten' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s.', 'twentyten' ), 'WordPress' ); ?></a>
-			</div><!-- #site-generator -->
+			<!-- tagCloud START --> 
+			<div id="tagCloud"> 
+				<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_tagCloud.png" alt="タグ" /></h3>
+				<ul> 
+					<li class="level10"><a href="/page/tag/id/6">SQL</a></li> 
+					<li class="level1"><a href="/page/tag/id/8">商標権</a></li> 
+					<li class="level9"><a href="/page/tag/id/4">Tutorial</a></li> 
+					<li class="level2"><a href="/page/tag/id/1">せつこ愛</a></li>
+					<li class="level8"><a href="/page/tag/id/6">SQL</a></li> 
+					<li class="level3"><a href="/page/tag/id/8">商標権</a></li> 
+					<li class="level7"><a href="/page/tag/id/4">Tutorial</a></li> 
+					<li class="level4"><a href="/page/tag/id/1">せつこ愛</a></li> 
+					<li class="level6"><a href="/page/tag/id/4">Tutorial</a></li> 
+					<li class="level5"><a href="/page/tag/id/1">せつこ愛</a></li>
+					<li class="level10"><a href="/page/tag/id/6">SQL</a></li> 
+					<li class="level1"><a href="/page/tag/id/8">商標権</a></li> 
+					<li class="level9"><a href="/page/tag/id/4">Tutorial</a></li> 
+					<li class="level2"><a href="/page/tag/id/1">せつこ愛</a></li>
+					<li class="level8"><a href="/page/tag/id/6">SQL</a></li> 
+					<li class="level3"><a href="/page/tag/id/8">商標権</a></li> 
+					<li class="level7"><a href="/page/tag/id/4">Tutorial</a></li> 
+					<li class="level4"><a href="/page/tag/id/1">せつこ愛</a></li> 
+					<li class="level6"><a href="/page/tag/id/4">Tutorial</a></li> 
+					<li class="level5"><a href="/page/tag/id/1">せつこ愛</a></li>
+				</ul> 
+			</div> 
+			<!-- tagCloud END -->
+			
+			<p class="backTop"><a href="#wrapper">ページの先頭に戻る</a></p>
+			
+		</div>
+		<!-- footer_inner END -->
+		
+		<!-- copyright_area START -->
+		<div class="copyright_area">
+			<p class='copyright'>Copyright &copy; 2010 日本電子専門学校　電設部 AllRight reserved.</p>
+		</div>
+		<!-- copyright_area END -->
+			
+	</footer>
+	<!-- footer END -->
+ 
+</body> 
 
-		</div><!-- #colophon -->
-	</div><!-- #footer -->
-
-</div><!-- #wrapper -->
-
-<?php
-	/* Always have wp_footer() just before the closing </body>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to reference JavaScript files.
-	 */
-
-	wp_footer();
-?>
-</body>
-</html>
+</html> 
