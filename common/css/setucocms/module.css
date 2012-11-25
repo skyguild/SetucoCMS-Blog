@@ -96,6 +96,11 @@ div.entryHead p a img{
 	display:block;
 }
 
+div.entryHead p a:hover img{
+	filter:Alpha(opacity:80%);
+	opacity:0.8;
+}
+
 /* -- entryHead dl -- */
 div.entryHead dt,
 div.entryHead dd{
@@ -235,15 +240,18 @@ div.entryBody div.entryPhoto p a:hover img{
 /*-- ENTRY Foot style  ------------------------------------------*/
 /*---------------------------------------------------------------*/
 div.entry p.moreRead a{
-	background:url(/common/images/front/setucocms/bg_moreread.png) no-repeat left center;
+	background:url(/common/images/front/setucocms/bg_moreread.png) no-repeat 0 0;
 	width:202px;
-	height:58px;
+	height:67px;
 	text-indent:-9999px;
 	display:block;
 	position:absolute;
 	left:-31px;
-	bottom:-77px;
+	bottom:-86px;
 	z-index:10;
+}
+div.entry p.moreRead a:hover{
+	background-position: 0 -67px;
 }
 div.entry div.socialButton{
 	background:url(/common/images/front/setucocms/bg_social.png) no-repeat left center;

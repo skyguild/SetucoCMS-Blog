@@ -43,7 +43,7 @@ html{
 	overflow-y:scroll;
 }
 body{
-	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size:90%;
 	color:#333;
 	background:url(/common/images/front/setucocms/bg_body.gif) repeat 0 0 !important;
@@ -68,10 +68,6 @@ pre{
 	white-space:-o-pre-wrap;   /* Opera 7 */
 	white-space:pre-wrap;	  /* CSS3 */
 	word-wrap:break-word;	  /* IE 5.5+ */
-}
-input:hover{
-	filter:Alpha(opacity:80%);
-	opacity:0.8;
 }
 
 /*---------------------------------------------------------------*/
@@ -108,13 +104,13 @@ div#header_inner h1{
 	padding:22px 0;
 }
 div#header_inner h1 a{
-	background:url(/common/images/front/setucocms/logo.png) no-repeat left center;
+	background:url(/common/images/front/setucocms/logo.png) no-repeat 0 0;
 	width:582px;
-	height:84px;
+	height:83px;
 	display:block;
 }
 div#header_inner h1 a:hover{
-	background:url(/common/images/front/setucocms/logo_on.png) no-repeat left center;
+	background-position: 0 -83px;
 }
 div#header_inner p.descript{
 	background:url(/common/images/front/setucocms/txt_descript.png) no-repeat left center;
@@ -239,6 +235,10 @@ div.navList ul.writerList li a img{
 	height:70px;
 	display:block;
 }
+div.navList ul.writerList li a:hover img{
+	filter:Alpha(opacity:90%);
+	opacity:0.9;
+}
 
 /*---------------------------------------------------------------*/
 /*-- SEARCH style（検索） ---------------------------------------*/
@@ -290,6 +290,9 @@ div#navArea form p input{
 	text-indent:-9999px;
 	cursor:pointer;
 }
+div#navArea form p input:hover{
+	background-position: 0 -34px;
+}
 
 /*---------------------------------------------------------------*/
 /*-- FOOTER style -----------------------------------------------*/
@@ -311,13 +314,16 @@ footer .footer_inner{
 /* -- backTop -- */
 footer .footer_inner p.backTop a{
 	position:absolute;
-	top:-138px;
+	top:-157px;
 	right:-10px;
 	background:url(/common/images/front/setucocms/bg_backTop.png) no-repeat 0 0;
 	display:block;
 	width:172px;
-	height:54px;
+	height:60px;
 	text-indent:-9999px;
+}
+footer .footer_inner p.backTop a:hover{
+	background-position: 0 -60px;
 }
 
 /* -- copyright -- */
