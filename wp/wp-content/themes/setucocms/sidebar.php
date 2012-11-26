@@ -19,9 +19,9 @@
  
 					<!-- navList START --> 
 					<div class="navList"> 
-						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_setucocms.png" alt="SetucoCMSとは何か" /></h3> 
-						<p>日本電子専門学校電設部有志によるCMS開発プロジェクトです。SetucoCMSのコンセプトは”自由”。サイトを制作する人に自由さと楽しさを感じてもらいたい。そんな想いを込めたほんわか系CMSです。</p>
-						<p class="linkText"><a href="#">SetucoCMSプロジェクト</a></p>
+						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_setucocms.png" alt="SetucoCMSって？" /></h3> 
+						<p><?php bloginfo('description'); ?></p>
+						<p class="linkText"><a href="http://setucocms.org" target="_blank">SetucoCMSプロジェクト</a></p>
 					</div> 
 					<!-- navList END --> 
  
@@ -90,9 +90,9 @@
 					<div class="navList"> 
 						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_link.png" alt="リンク" /></h3> 
 						<ul>
-							<li><a href="#">SetucoCMSプロジェクト</a></li>
-							<li><a href="#">日本電子専門学校</a></li>
-							<li><a href="#">日本電子専門学校電設部</a></li>
+							<li><a href="http://setucocms.org" target="_blank">SetucoCMSプロジェクト</a></li>
+							<li><a href="http://www.jec.ac.jp" target="_blank">日本電子専門学校</a></li>
+							<li><a href="http://penguin.jec.ac.jp/" target="_blank">日本電子専門学校電設部</a></li>
 						</ul>
 					</div> 
 					<!-- navList END --> 
