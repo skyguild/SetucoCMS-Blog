@@ -42,11 +42,7 @@
 					<div class="navList"> 
 						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_category.png" alt="カテゴリー" /></h3> 
 						<ul>
-							<li><a href="#">Web制作（5）</a></li>
-							<li><span>開発技法（0）</span></li>
-							<li><a href="#">データベース（5）</a></li>
-							<li><a href="#">プログラミング（5）</a></li>
-							<li><a href="#">その他（5）</a></li>
+              <?php wp_list_categories('title_li&show_count=1'); ?>
 						</ul>
 					</div> 
 					<!-- navList END --> 
@@ -55,16 +51,7 @@
 					<div class="navList"> 
 						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_archive.png" alt="アーカイブ" /></h3> 
 						<ul>
-							<li><a href="#">2011年6月（5）</a></li>
-							<li><a href="#">2011年6月（5）</a></li>
-							<li><a href="#">2011年6月（5）</a></li>
-							<li><a href="#">2011年6月（5）</a></li>
-							<li><a href="#">2011年6月（5）</a></li>
-							<li><a href="#">2011年6月（5）</a></li>
-							<li><a href="#">2011年6月（5）</a></li>
-							<li><a href="#">2011年6月（5）</a></li>
-							<li><a href="#">2011年6月（5）</a></li>
-							<li><a href="#">2011年6月（5）</a></li>
+              <?php wp_get_archives('show_post_count=1'); ?>
 						</ul>
 						<p class="linkText"><a href="#">さらに過去を表示する</a></p>
 					</div> 
