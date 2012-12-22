@@ -20,7 +20,7 @@ $(function(){
 					$(this).attr("src", org_src);
 				}
 			);
-		})
+		});
 	}
 
 	$(".heightLine").each(function(){
@@ -43,8 +43,10 @@ $(function(){
 			};
 
 			_this.find(".row").height(maxHeight).removeClass('row');
-		})
+		});
 
-	})
+	});
+
+	$("div.entryBody a[target='_blank']").addClass("blank_link");
 
 });
