@@ -371,36 +371,36 @@ footer .footer_inner #tagCloud ul:after{
 	*display:inline;
   *zoom:1;
 }
-#tagCloud ul li.level10 a{
+#tagCloud ul li.level1 a{
 	font-size:84%;
 }
-#tagCloud ul li.level9 a{
+#tagCloud ul li.level2 a{
 	font-size:91%;
 }
-#tagCloud ul li.level8 a{
+#tagCloud ul li.level3 a{
 	font-size:100%;
 }
-#tagCloud ul li.level7 a{
+#tagCloud ul li.level4 a{
 	font-size:110%;
 }
-#tagCloud ul li.level6 a{
+#tagCloud ul li.level5 a{
 	font-size:120%;
 }
-#tagCloud ul li.level5 a{
+#tagCloud ul li.level6 a{
 	font-size:130%;
 }
-#tagCloud ul li.level4 a{
+#tagCloud ul li.level7 a{
 	font-size:140%;
 }
-#tagCloud ul li.level3 a{
+#tagCloud ul li.level8 a{
 	font-size:150%;
 	font-weight:bold;
 }
-#tagCloud ul li.level2 a{
+#tagCloud ul li.level9 a{
 	font-size:160%;
 	font-weight:bold;
 }
-#tagCloud ul li.level1 a{
+#tagCloud ul li.level10 a{
 	font-size:170%;
 	font-weight:bold;
 }
