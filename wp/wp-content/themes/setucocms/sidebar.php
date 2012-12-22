@@ -61,14 +61,27 @@
 					<div class="navList"> 
 						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_writer.png" alt="ライター" /></h3> 
 						<ul class="writerList">
-							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /><br /><span>aki</span></a></li>
-							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_fossilcat.png" alt="" /><br /><span>fossilcat</span></a></li>
-							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_re_3_19.gif" alt="" /><br /><span>re_3_10</span></a></li>
-							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /><br /><span>skyguild</span></a></li>
-							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /><br /><span>akitsukada</span></a></li>
-							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /><br /><span>karino777</span></a></li>
-							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /><br /><span>mar</span></a></li>
-							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /><br /><span>tar-san</span></a></li>
+						<?php
+
+							$args = wp_parse_args( $args );
+							extract( $args, EXTR_SKIP );
+
+							$query_args = wp_array_slice_assoc( $args, array( 'orderby', 'order', 'number' ) );
+							$query_args['fields'] = 'ids';
+							$authors = get_users( $query_args );	
+
+							foreach ( $authors as $author_id ){
+								$author = get_userdata( $author_id );
+
+								$output = "<li><a href='#'>";
+								$output .= get_avatar( $author_id );
+								$output .= "<br /><span>";
+								$output .= "$author->nickname";
+								$output .= "</span></a></li>";
+								echo $output;
+							}
+
+						?>
 						</ul>
 					</div> 
 					<!-- navList END --> 

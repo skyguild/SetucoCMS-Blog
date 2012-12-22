@@ -95,6 +95,12 @@ div.entryHead p a img{
 	height:70px;
 	display:block;
 }
+div.entryHead p span img{
+	background:url(../images/front/setucocms/writer/bg_writer.png) no-repeat left top;
+	width:70px;
+	height:70px;
+	display:block;
+}
 
 div.entryHead p a:hover img{
 	filter:Alpha(opacity:80%);
@@ -135,10 +141,16 @@ dl.entryInfo dd a{
 	padding-left:17px;
 	display:block;
 }
+dl.entryInfo dd span{
+	height:14px;
+	padding-top:3px;
+	padding-left:17px;
+	display:block;
+}
 dl.entryInfo dd.author a{
 	background:url(../images/front/setucocms/icn_author.png) no-repeat left center;
 }
-dl.entryInfo dd.author a{
+dl.entryInfo dd.author span{
 	background:url(../images/front/setucocms/icn_author.png) no-repeat left center;
 }
 dl.entryInfo dd.category a{

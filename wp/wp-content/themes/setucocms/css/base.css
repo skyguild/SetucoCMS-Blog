@@ -230,10 +230,10 @@ div.navList ul.writerList li span{
 	padding-left:0;
 }
 div.navList ul.writerList li a img{
-	background:url(../images/front/setucocms/writer/bg_writer.png) no-repeat left top;
 	width:70px;
 	height:70px;
 	display:block;
+	background-color: #fff;
 }
 div.navList ul.writerList li a:hover img{
 	filter:Alpha(opacity:90%);
