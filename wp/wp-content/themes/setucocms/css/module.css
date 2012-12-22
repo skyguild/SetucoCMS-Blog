@@ -71,32 +71,28 @@ div.entryHead:after{
 	line-height:0;
 	clear:both;
 }
-div.entryHead h2{
+div.entryHead h2,
+div.entryHead div.text{
 	float:right;
 	background:url(../images/front/setucocms/bg_entryTitle.gif) no-repeat 76px 0;
 	width:100%;
 	min-height:54px;
 	font-size:110%;
 }
-div.entryHead h2 span{
+div.entryHead h2 span,
+div.entryHead div.text div{
 	margin-left:76px;
 	padding:16px 15px 16px 28px;
 	display:block;
 }
-div.entryHead p{
+div.entryHead p.avatar{
 	float:left;
 	width:70px;
 	margin-top:2px;
 	margin-right:-76px;
 }
-div.entryHead p a img{
-	background:url(../images/front/setucocms/writer/bg_writer.png) no-repeat left top;
-	width:70px;
-	height:70px;
-	display:block;
-}
+div.entryHead p a img,
 div.entryHead p span img{
-	background:url(../images/front/setucocms/writer/bg_writer.png) no-repeat left top;
 	width:70px;
 	height:70px;
 	display:block;
@@ -121,39 +117,32 @@ div.entryHead dd{
 }
 
 /* -- entryInfo -- */
-div.entryHead dl.entryInfo{
+dl.infoParts{
 	clear:both;
 	float:left;
 	margin-top:-12px;
 	margin-left:90px;
 	display:inline;
 }
-dl.entryInfo dd.date{
+dl.infoParts dd.date{
 	height:13px;
 	padding-left:20px;
 	padding-top:3px;
 	background:url(../images/front/setucocms/icn_date.png) no-repeat left top;
 }
 
-dl.entryInfo dd a{
+dl.infoParts dd a,
+dl.infoParts dd span{
 	height:14px;
 	padding-top:3px;
 	padding-left:17px;
 	display:block;
 }
-dl.entryInfo dd span{
-	height:14px;
-	padding-top:3px;
-	padding-left:17px;
-	display:block;
-}
-dl.entryInfo dd.author a{
+dl.infoParts dd.author a, 
+dl.infoParts dd.author span{
 	background:url(../images/front/setucocms/icn_author.png) no-repeat left center;
 }
-dl.entryInfo dd.author span{
-	background:url(../images/front/setucocms/icn_author.png) no-repeat left center;
-}
-dl.entryInfo dd.category a{
+dl.infoParts dd.category a{
 	background:url(../images/front/setucocms/icn_category.png) no-repeat left center;
 	height:11px;
 	padding-left:20px;
@@ -297,6 +286,135 @@ div.socialButton ul:after{
 	line-height:0;
 	clear:both;
 }
+
+/*---------------------------------------------------------------*/
+/*-- comment style ----------------------------------------------*/
+/*---------------------------------------------------------------*/
+div#comment > h2,
+div#respond > h3{
+	margin-bottom: 25px;
+}
+div#comment div.commentList{
+	zoom:100%;
+	margin-bottom: 30px;
+}
+div.commentList:after{
+	content:".";
+	display:block;
+	visibility:hidden;
+	height:0.1px;
+	font-size:0.1em;
+	line-height:0;
+	clear:both;
+}
+div.commentList div.text{
+	float:right;
+	/*background:url(../images/front/setucocms/bg_entryTitle.gif) no-repeat 76px 0;*/
+	width:100%;
+	min-height:54px;
+	line-height: 1.5;
+}
+div.commentList div.text div{
+	margin-left:76px;
+	/*padding:16px 15px 16px 28px;*/
+	display:block;
+}
+div.commentList p.avatar{
+	float:left;
+	width:47px;
+	margin-top:2px;
+	margin-right:-76px;
+}
+div.commentList p a img,
+div.commentList p span img{
+	width:47px;
+	height:47px;
+	display:block;
+}
+
+div.commentList p a:hover img{
+	filter:Alpha(opacity:80%);
+	opacity:0.8;
+}
+
+/* -- commentList dl -- */
+div.commentList dt,
+div.commentList dd{
+	float:left;
+	font-size:75%;
+}
+div.commentList dt{
+	text-indent:-9999px;
+}
+div.commentList dd{
+	margin-right:15px;
+}
+
+/* -- infoParts -- */
+div.commentList dl.infoParts{
+	float: right;
+	margin-top: 10px;
+}
+
+/* -- respond -- */
+div#respond{
+	padding: 10px 0 10px;
+}
+
+div#respond p.logged-in-as,
+div#respond p.logged-in-as a,
+div#respond h3#reply-title small,
+div#respond form p.comment-notes{
+	font-size: 80%;
+	color: #888;
+}
+div#respond p.logged-in-as,
+div#respond form p.comment-notes{
+	margin-bottom: 20px;
+}
+div#respond form p{
+	margin-bottom: 15px;
+}
+div#respond form p.comment-form-comment label,
+div#respond form p.form-allowed-tags{
+	display: none;
+}
+div#respond form p input{
+	margin-left: 20px;
+	width: 50%;
+	padding: 5px;
+}
+div#respond form p textarea{
+	width: 80%;
+	padding: 5px;
+}
+div#respond form input[type='submit']{
+	background: none;
+	border: none;
+	width: 107px;
+	height: 50px;
+	background:url(../images/front/setucocms/btn_comment_post.gif) no-repeat 0 0;
+	display: block;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+div#respond form input[type='submit']:hover{
+	filter:Alpha(opacity:80%);
+	opacity:0.8;
+}
+
+/* -- trackback -- */
+div#trackback{
+	padding: 10px 0 10px;
+}
+div#trackback h2{
+	margin-bottom: 15px;
+}
+div#trackback input{
+	width: 60%;
+	padding: 5px;
+}
+
 
 /*---------------------------------------------------------------*/
 /*-- pageNav style ----------------------------------------------*/

@@ -7,8 +7,8 @@
 
 	<div class="entryHead">
 		<h2><span><?php the_title(); ?></span></h2>
-		<p><a href="#"><?php echo get_avatar(get_the_author_id()) ?></a></p>
-		<dl class="entryInfo">
+		<p class="avatar"><a href="#"><?php echo get_avatar(get_the_author_id()) ?></a></p>
+		<dl class="infoParts">
 			<dt class="date">日付</dt>
 				<dd class="date"><?php the_date(); ?></dd>
 			<dt class="author">ライター</dt>
@@ -59,9 +59,10 @@
 
 	<hr />
 
-	<h2>トラックバック</h2>
-	<p><input type="text" value="<?php trackback_url(); ?>" /></p>
-
+	<div id="trackback">
+		<h2><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_trackback.gif" alt="トラックバック" width="141" height="31" /></h2>
+		<p><input type="text" value="<?php trackback_url(); ?>" onclick="this.select(0,this.value.length)" /></p>
+	</div>
 
 </div></div></div></div></div></div> 
 <!-- comment END -->

@@ -5,9 +5,9 @@
 	<!-- entry START --> 
 	<div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry"> 
 
-		<div class="entryHead">
+		<div class="infoParts">
 			<h2><span><?php the_title(); ?></span></h2>
-			<p><a href="#"><?php echo get_avatar(get_the_author_id()) ?></a></p>
+			<p class="avatar"><a href="#"><?php echo get_avatar(get_the_author_id()) ?></a></p>
 			<dl class="entryInfo">
 				<dt class="date">日付</dt>
 					<dd class="date"><?php the_date(); ?></dd>
