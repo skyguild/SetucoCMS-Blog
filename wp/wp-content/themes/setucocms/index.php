@@ -12,55 +12,65 @@
  * @subpackage Twenty_Ten
  * @since Twenty Ten 1.0
  */
+?>
 
-get_header(); ?>
+<?php get_header(); ?>
 
 
-<!-- entry START --> 
-<div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry"> 
+<?php while ( have_posts() ) : the_post(); ?>
 
-	<div class="entryHead">
-		<h2><span>タイトルタイトル</span></h2>
-		<p><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/writer/icn_writer_noimage.png" alt="" /></a></p>
-		<dl class="entryInfo">
-			<dt class="date">日付</dt>
-				<dd class="date">2010年09月12日</dd>
-			<dt class="author">ライター</dt>
-				<dd class="author"><a href="#">author</a></dd>
-			<dt class="category">カテゴリー</dt>
-				<dd class="category"><a href="#">未分類</a></dd>
-		</dl>
-		<dl class="entryComments">
-			<dt class="comment">コメント数</dt>
-				<dd class="comment"><a href="#">3コメント</a></dd>
-		</dl>
-		<dl class="entryTags">
-			<dt class="tag">タグ</dt>
-				<dd class="tag"><a href="#">未分類</a></dd>
-				<dd class="tag"><a href="#">未分類</a></dd>
-				<dd class="tag"><a href="#">未分類</a></dd>
-		</dl>
-	</div>
-	
-	<div class="entryBody">
-		<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-	</div>
-	
-	<p class="moreRead"><a href="#">続きを読む</a></p>
-	
-	<div class="socialButton">
-		<ul>
-			<li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-hashtags="setucocms">ツイート</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
-			<li class="hatena"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-			<li class="plusone"><g:plusone size="medium"></g:plusone></li>
-			<li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-show-faces="false"></div></li>
-		</ul>
-	</div>
+	<!-- entry START --> 
+	<div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry"> 
 
-</div></div></div></div></div></div> 
-<!-- entry END -->
+		<div class="entryHead">
+			<h2><span><?php the_title(); ?></span></h2>
+			<p><a href="#"><?php echo get_avatar(get_the_author_id()) ?></a></p>
+			<dl class="entryInfo">
+				<dt class="date">日付</dt>
+					<dd class="date"><?php the_date(); ?></dd>
+				<dt class="author">ライター</dt>
+					<dd class="author"><a href="#"><?php the_author(); ?></a></dd>
+				<dt class="category">カテゴリー</dt>
+					<dd class="category"><?php the_category(); ?></dd>
+			</dl>
+			<dl class="entryComments">
+				<dt class="comment">コメント数</dt>
+					<dd class="comment"><?php comments_popup_link('0コメント', '1コメント', 
+'% コメント'); ?></dd>
+			</dl>
+			<dl class="entryTags">
+				<dt class="tag">タグ</dt>
+					<?php the_tags('<dd class="tag">', '</dd><dd class="tag">', '</dd>'); ?>
+			</dl>
+		</div>
+		
+		<div class="entryBody">
+			<?php the_content(false, true); ?>
+		</div>
+		
+		<p class="moreRead"><a href="<?php the_permalink(); ?>#more-<?php the_ID(); ?>">続きを読む</a></p>
+		
+		<div class="socialButton">
+			<ul>
+				<li class="twitter">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink() ?>?ad=sharetw" data-text="<?php the_title(); ?> | <?php echo bloginfo( 'name' ); ?>" data-lang="ja" data-hashtags="setucocms" data-via="SetucoCMS" data-related="SetucoCMS">ツイート</a>
+				</li>
+				<li class="hatena">
+					<a href="http://b.hatena.ne.jp/entry/<?php the_permalink() ?>" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+				</li>
+				<li class="plusone">
+					<g:plusone size="medium" data-href="<?php the_permalink() ?>"></g:plusone>
+				</li>
+				<li class="facebook">
+					<fb:like href="<?php the_permalink() ?>" send="false" layout="button_count" show_faces="false"></fb:like>
+				</li>
+			</ul>
+		</div>
 
+	</div></div></div></div></div></div> 
+	<!-- entry END -->
+
+<?php endwhile; ?>
 
 <?php get_sidebar(); ?>
 

@@ -22,6 +22,16 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" media="screen" /> 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
+
+	<meta property="og:title" content="<?php echo bloginfo( 'name' ); ?>" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/front/setucocms/og_setuco.jpg" />
+	<meta property="og:url" content="<?php echo home_url( '/' ); ?>" />
+	<meta property="og:site_name" content="<?php echo bloginfo( 'name' ); ?>" />
+	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+	<meta property="fb:admins" content="100002075793566" />
+	<meta property="fb:app_id" content="317065731650807" />
+
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -30,31 +40,9 @@
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/base.js"></script>
 
 	<title><?php echo bloginfo( 'name' ); ?></title>
-
-	<!-- plusone+ START -->
-	<script type="text/javascript">
-	  window.___gcfg = {lang: 'ja'};
-
-	  (function() {
-	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-	    po.src = 'https://apis.google.com/js/plusone.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-	  })();
-	</script>
-	<!-- plusone+ END -->
 </head>
 
 <body>
-	<!-- Facebook Javascript SDK START -->
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-	<!-- Facebook Javascript SDK END -->
  
 	<!-- wrapper START --> 
 	<div id="wrapper"> 
