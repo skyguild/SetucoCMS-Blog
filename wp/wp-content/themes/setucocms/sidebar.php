@@ -9,10 +9,11 @@
 				<!-- navArea START --> 
 				<div id="navArea"> 
  
-					<form action="/page/search/" method="get"> 
+					<form action="<?php echo home_url( '/' ); ?>" method="get"> 
 						<dl> 
 							<dt><label for="keyword">フリーワード検索</label></dt> 
-							<dd><input type="text" name="query" id="keyword" value="検索ワードを入力" onfocus="if (this.value == '検索ワードを入力') { this.value=''; }" onblur="if(this.value == '') { this.value='検索ワードを入力'; }" tabindex="2" /></dd> 
+							<dd><input type="text" name="s" id="s" value="検索ワードを入力" onfocus="if (this.value == '検索ワードを入力') { this.value=''; }" onblur="if(this.value == '') { this.value='検索ワードを入力'; }" tabindex="2" />
+							</dd> 
 						</dl> 
 						<p><input type="submit" value="検索" tabindex="3" /></p> 
 					</form>

@@ -23,6 +23,12 @@ div.entry{
 	background:url(../images/front/setucocms/bg_entry_top_right.png) no-repeat right top;
 	position:relative;
 }
+div.entry.single{
+	margin-bottom:40px;
+}
+div.entry.single div.entryHead p strong{
+	padding-right: 10px;
+}
 div.entry div.entry{
 	margin-left:0;
 	margin-bottom:0;

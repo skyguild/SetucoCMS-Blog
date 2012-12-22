@@ -1,37 +1,33 @@
-<?php
-/**
- * The template for displaying Search Results pages.
- *
- * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<!-- entry START --> 
+<div class="entry single"><div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry">
+	<div class="entryHead">
+		<p><strong><?php echo $_GET['s']; ?></strong>の検索結果</p>
+	</div>
+</div></div></div></div></div></div> 
+<!-- entry END -->
 
-		<div id="container">
-			<div id="content" role="main">
-
-<?php if ( have_posts() ) : ?>
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyten' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-				<?php
-				/* Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called loop-search.php and that will be used instead.
-				 */
-				 get_template_part( 'loop', 'search' );
-				?>
+<?php if( have_posts() ) : ?>
+	<?php while ( have_posts() ) : the_post(); ?>
+		<?php include("entry_parts.php"); ?>
+	<?php endwhile; ?>
 <?php else : ?>
-				<div id="post-0" class="post no-results not-found">
-					<h2 class="entry-title"><?php _e( 'Nothing Found', 'twentyten' ); ?></h2>
-					<div class="entry-content">
-						<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'twentyten' ); ?></p>
-						<?php get_search_form(); ?>
-					</div><!-- .entry-content -->
-				</div><!-- #post-0 -->
+		<!-- entry START --> 
+		<div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry">
+
+			<div class="entryBody">
+				<p>「<?php echo $_GET['s']; ?>」に一致するページはありませんでした。<br />以下のことを確認して再度検索してみてください。</p>
+
+				<p>キーワードに誤字・脱字はありませんか？<br />
+				キーワードは長すぎませんか？<br />
+				一般的なキーワードに変えてみてください。</p>
+			</div>
+		</div></div></div></div></div></div> 
+		<!-- entry END -->
+
 <?php endif; ?>
-			</div><!-- #content -->
-		</div><!-- #container -->
 
 <?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
