@@ -75,8 +75,7 @@ pre{
 /*---------------------------------------------------------------*/
 div#wrapper{
 	width:90%;
-	min-width:900px;
-	max-width:1180px;
+	width:960px;
 	margin:0 auto;
 	text-align:left;
 }
@@ -228,6 +227,14 @@ div.navList ul.writerList li{
 div.navList ul.writerList li a,
 div.navList ul.writerList li span{
 	padding-left:0;
+	display: block;
+}
+div.navList ul.writerList li a span,
+div.navList ul.writerList li span span{
+	width:70px;
+	word-wrap: break-word;
+	display: block;
+	line-height: 1.5;
 }
 div.navList ul.writerList li a img{
 	width:70px;

@@ -1,61 +1,60 @@
-<?php
-/**
- * The template for displaying Archive pages.
- *
- * Used to display archive-type pages if nothing more specific matches a query.
- * For example, puts together date-based pages if no date.php file exists.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<?php while ( have_posts() ) : the_post(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+	<!-- entry START --> 
+	<div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry"> 
 
-<?php
-	/* Queue the first post, that way we know
-	 * what date we're dealing with (if that is the case).
-	 *
-	 * We reset this later so we can run the loop
-	 * properly with a call to rewind_posts().
-	 */
-	if ( have_posts() )
-		the_post();
-?>
+		<div class="entryHead">
+			<h2<?php if(mb_strlen(get_the_title()) >= 25) echo " class='long'"; ?>><span><?php the_title(); ?></span></h2>
+			<p class="avatar"><a href="#"><?php echo get_avatar(get_the_author_id()) ?></a></p>
+			<dl class="infoParts">
+				<dt class="date">日付</dt>
+					<dd class="date"><?php the_date(); ?></dd>
+				<dt class="author">ライター</dt>
+					<dd class="author"><a href="#"><?php the_author(); ?></a></dd>
+				<dt class="category">カテゴリー</dt>
+					<dd class="category"><?php the_category(); ?></dd>
+			</dl>
+			<dl class="entryComments">
+				<dt class="comment">コメント数</dt>
+					<dd class="comment"><?php comments_popup_link('0コメント', '1コメント', 
+'% コメント'); ?></dd>
+			</dl>
+			<dl class="entryTags">
+				<dt class="tag">タグ</dt>
+					<?php the_tags('<dd class="tag">', '</dd><dd class="tag">', '</dd>'); ?>
+			</dl>
+		</div>
+		
+		<div class="entryBody">
+			<?php the_content(false, true); ?>
+		</div>
+		
+		<p class="moreRead"><a href="<?php the_permalink(); ?>#more-<?php the_ID(); ?>">続きを読む</a></p>
+		
+		<div class="socialButton">
+			<ul>
+				<li class="twitter">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink() ?>?ad=sharetw" data-text="<?php the_title(); ?> | <?php echo bloginfo( 'name' ); ?>" data-lang="ja" data-hashtags="setucocms" data-via="SetucoCMS" data-related="SetucoCMS">ツイート</a>
+				</li>
+				<li class="hatena">
+					<a href="http://b.hatena.ne.jp/entry/<?php the_permalink() ?>" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+				</li>
+				<li class="plusone">
+					<g:plusone size="medium" data-href="<?php the_permalink() ?>"></g:plusone>
+				</li>
+				<li class="facebook">
+					<fb:like href="<?php the_permalink() ?>" send="false" layout="button_count" show_faces="false"></fb:like>
+				</li>
+			</ul>
+		</div>
 
-			<h1 class="page-title">
-<?php if ( is_day() ) : ?>
-				<?php printf( __( 'Daily Archives: <span>%s</span>', 'twentyten' ), get_the_date() ); ?>
-<?php elseif ( is_month() ) : ?>
-				<?php printf( __( 'Monthly Archives: <span>%s</span>', 'twentyten' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'twentyten' ) ) ); ?>
-<?php elseif ( is_year() ) : ?>
-				<?php printf( __( 'Yearly Archives: <span>%s</span>', 'twentyten' ), get_the_date( _x( 'Y', 'yearly archives date format', 'twentyten' ) ) ); ?>
-<?php else : ?>
-				<?php _e( 'Blog Archives', 'twentyten' ); ?>
-<?php endif; ?>
-			</h1>
+	</div></div></div></div></div></div> 
+	<!-- entry END -->
 
-<?php
-	/* Since we called the_post() above, we need to
-	 * rewind the loop back to the beginning that way
-	 * we can run the loop properly, in full.
-	 */
-	rewind_posts();
-
-	/* Run the loop for the archives page to output the posts.
-	 * If you want to overload this in a child theme then include a file
-	 * called loop-archive.php and that will be used instead.
-	 */
-	 get_template_part( 'loop', 'archive' );
-?>
-
-			</div><!-- #content -->
-		</div><!-- #container -->
+<?php endwhile; ?>
 
 <?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

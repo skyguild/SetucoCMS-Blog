@@ -6,7 +6,7 @@
 <div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry"> 
 
 	<div class="entryHead">
-		<h2><span><?php the_title(); ?></span></h2>
+			<h2<?php if(mb_strlen(get_the_title()) >= 25) echo " class='long'"; ?>><span><?php the_title(); ?></span></h2>
 		<p class="avatar"><a href="#"><?php echo get_avatar(get_the_author_id()) ?></a></p>
 		<dl class="infoParts">
 			<dt class="date">日付</dt>

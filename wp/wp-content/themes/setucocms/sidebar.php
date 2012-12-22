@@ -26,7 +26,7 @@
 					<!-- navList END --> 
  
 					<!-- navList START --> 
-					<div class="navList"> 
+					<!-- <div class="navList"> 
 						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_popular.png" alt="人気のエントリー" /></h3> 
 						<ul>
 							<li><a href="#">1stリリースを迎えて-謝辞-</a></li>
@@ -35,7 +35,7 @@
 							<li><a href="#">1stリリースを迎えて-謝辞-</a></li>
 							<li><a href="#">1stリリースを迎えて-謝辞-</a></li>
 						</ul>
-					</div> 
+					</div>  -->
 					<!-- navList END --> 
  
 					<!-- navList START --> 
@@ -51,16 +51,16 @@
 					<div class="navList"> 
 						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_archive.png" alt="アーカイブ" /></h3> 
 						<ul>
-              <?php wp_get_archives('show_post_count=1'); ?>
+              <?php wp_get_archives('show_post_count=1&limit=12'); ?>
 						</ul>
-						<p class="linkText"><a href="#">さらに過去を表示する</a></p>
+						<!-- <p class="linkText"><a href="#">さらに過去を表示する</a></p> -->
 					</div> 
 					<!-- navList END --> 
  
 					<!-- navList START --> 
 					<div class="navList"> 
 						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_writer.png" alt="ライター" /></h3> 
-						<ul class="writerList">
+						<ul class="writerList heightLine">
 						<?php
 
 							$args = wp_parse_args( $args );
@@ -73,7 +73,7 @@
 							foreach ( $authors as $author_id ){
 								$author = get_userdata( $author_id );
 
-								$output = "<li><a href='#'>";
+								$output = "<li class='heightLineList'><a href='#'>";
 								$output .= get_avatar( $author_id );
 								$output .= "<br /><span>";
 								$output .= "$author->nickname";

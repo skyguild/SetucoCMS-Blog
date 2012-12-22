@@ -26,7 +26,7 @@
 						<?php elseif($tag->count != 0) : ?>
 							<li class="level<?php echo $tag->count; ?>"><a href="<?php echo get_tag_link($tag->term_id); ?>"><?php echo $tag->name ?></a></li>
 						<?php endif ?>
-						<?php if (++$i == 20) break; ?>
+						<?php if (++$i == 40) break; ?>
 					<?php endforeach ?>
 				</ul> 
 			</div> 

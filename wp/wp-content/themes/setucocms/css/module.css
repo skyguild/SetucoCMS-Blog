@@ -79,10 +79,20 @@ div.entryHead div.text{
 	min-height:54px;
 	font-size:110%;
 }
+div.entryHead h2.long{
+	background:url(../images/front/setucocms/bg_entryTitle_long.png) no-repeat 76px 0;
+	height: 72px;
+	line-height: 1.5;
+	padding-bottom: 15px;
+}
+div.entryHead h2.long span{
+	width: 450px;
+	padding-top: 10px;
+}
 div.entryHead h2 span,
 div.entryHead div.text div{
 	margin-left:76px;
-	padding:16px 15px 16px 28px;
+	padding:18px 15px 16px 28px;
 	display:block;
 }
 div.entryHead p.avatar{
@@ -197,7 +207,6 @@ div.entryBody h4{
 }
 div.entryBody p{
 	padding-bottom:10px;
-	max-width:40em;
 	line-height:1.5;
 }
 
