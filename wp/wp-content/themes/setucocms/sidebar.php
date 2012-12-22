@@ -74,7 +74,9 @@
 							foreach ( $authors as $author_id ){
 								$author = get_userdata( $author_id );
 
-								$output = "<li class='heightLineList'><a href='#'>";
+								$output = "<li class='heightLineList'><a href='";
+								$output .= home_url();
+								$output .= "/?author=$author_id'>";
 								$output .= get_avatar( $author_id );
 								$output .= "<br /><span>";
 								$output .= "$author->nickname";
