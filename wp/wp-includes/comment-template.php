@@ -1554,7 +1554,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		<?php if ( comments_open( $post_id ) ) : ?>
 			<?php do_action( 'comment_form_before' ); ?>
 			<div id="respond">
-				<h3 id="reply-title"><?php comment_form_title( $args['title_reply'], $args['title_reply_to'] ); ?> <small><?php cancel_comment_reply_link( $args['cancel_reply_link'] ); ?></small></h3>
+				<h3 id="reply-title">コメントする <small><?php cancel_comment_reply_link( $args['cancel_reply_link'] ); ?></small></h3>
 				<?php if ( get_option( 'comment_registration' ) && !is_user_logged_in() ) : ?>
 					<?php echo $args['must_log_in']; ?>
 					<?php do_action( 'comment_form_must_log_in_after' ); ?>
