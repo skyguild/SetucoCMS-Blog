@@ -136,7 +136,7 @@ div.entryHead dd{
 dl.infoParts{
 	clear:both;
 	float:left;
-	margin-top:-12px;
+	margin-top:-10px;
 	margin-left:90px;
 	display:inline;
 }
@@ -167,7 +167,7 @@ dl.infoParts dd.category a{
 /* -- entryComments -- */
 div.entryHead dl.entryComments{
 	float:right;
-	margin-top:-12px;
+	margin-top:-10px;
 }
 dl.entryComments dd.comment{
 	margin-right:0;
@@ -229,11 +229,22 @@ div.entryBody em{
 	font-style: normal;
 }
 div.entryBody a{
-	color: #bbaa00;	
+	color: #938600;	
 }
 div.entryBody a.blank_link{
 	background:url(../images/front/setucocms/icn_entry_blank_link.png) no-repeat 100% 0;
 	padding-right: 17px;
+}
+
+/* COMMAND */
+div.entryBody div.command {
+	background-color: #333;
+	color: #2e2;
+	margin-bottom: 20px;
+	padding: 5px 8px;
+	font-size: 90%;
+	word-break: break-all;
+	line-height: 1.5;
 }
 
 /* -- LIST -- */
@@ -282,6 +293,7 @@ div.entryBody dl dd{
 /* -- BLOCKQUORE -- */
 div.entryBody blockquote{
 	background-color: #eee;
+	margin-bottom:20px;
 	padding: 18px 18px 3px;
 }
 div.entryBody cite{
@@ -514,14 +526,14 @@ div#pageNav ul li.navNext a{
 	margin-left:10px;
 }
 div#pageNav ul li.navNumber{
-	margin-top:2px;
+	margin-top:1px;
 }
 div#pageNav ul li.navNumber a ,
 div#pageNav ul li.navNumber span {
-	background:url(../images/front/setucocms/bg_pageNav_number.png) no-repeat left center;
+	background:url(../images/front/setucocms/bg_pageNav_number.png) no-repeat 1px 0;
 	width:35px;
-	height:28px;
-	padding-top:6px;
+	height:26px;
+	padding-top:10px;
 }
 div#pageNav ul li.current span{
 	background:url(../images/front/setucocms/bg_pageNav_numberCurrent.png) no-repeat left center;

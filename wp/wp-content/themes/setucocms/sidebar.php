@@ -1,4 +1,9 @@
-
+			
+				<div id="pageNav">		
+					<?php if (function_exists("custom_pagination")) {
+						custom_pagination($additional_loop->max_num_pages);
+					} ?>
+				</div>
 
 			</div> 
 			<!-- mainContent END --> 

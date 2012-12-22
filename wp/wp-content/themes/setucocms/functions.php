@@ -511,3 +511,61 @@ function twentyten_posted_in() {
 	);
 }
 endif;
+
+function custom_pagination($pages = '', $range = 2){
+
+	$showitems = ($range * 2)+1; 
+
+	global $paged;
+	if(empty($paged)) $paged = 1;
+
+	if($pages == ''){
+		global $wp_query;
+		$pages = $wp_query->max_num_pages;
+		if(!$pages){
+			$pages = 1;
+		}
+	}  
+
+	if(1 != $pages){
+		echo '<ul>';
+
+		if($paged > 1){
+			echo '<li class="navPrev"><a href="'.get_pagenum_link($paged - 1).'">前へ</a></li>';
+		}
+
+	    for ($i=1; $i <= $pages; $i++){
+			//１～３ページまでの設定
+			if($paged <= $range){
+				if($paged == $i){
+					echo '<li class="navNumber current"><span>'.$i.'</span></li>';
+				}elseif($i <= $showitems){
+					echo '<li class="navNumber"><a href="'.get_pagenum_link($i).'" class="inactive">'.$i.'</a></li>';
+				}
+			}
+			//最後から２つ前～最後までの設定
+			elseif($paged >= ($pages-1)){
+				if($paged == $i){
+					echo '<li class="navNumber current"><span>'.$i.'</span></li>';
+				}elseif(($pages - $showitems) < $i){
+					echo '<li class="navNumber"><a href="'.get_pagenum_link($i).'" class="inactive">'.$i.'</a></li>';
+				}
+			}
+			//その他
+			else{
+				if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems)){
+					echo ($paged == $i)? '<li class="navNumber current"><span>'.$i.'</span></li>':'<li class="navNumber"><a href="'.get_pagenum_link($i).'" class="inactive">'.$i.'</a></li>';
+				}
+			}
+		}
+
+		if($paged < $pages){
+			echo '<li class="navNext"><a href="'.get_pagenum_link($pages).'">次へ</a></li>';
+		}else{
+			echo '<li class="navNext"><a href="'.get_pagenum_link($pages).'">次へ</a></li>';
+		}
+
+		echo '</ul>';
+	}
+}
+
