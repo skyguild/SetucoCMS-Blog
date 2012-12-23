@@ -2,7 +2,34 @@
 
 <html> 
 
-<head> 
+<head>
+
+	<?php
+		$meta = array('description','title', 'og_image');
+		$meta['description'] = get_bloginfo('description');
+		$meta['title'] = get_bloginfo( 'name' );
+		$meta['og_image'] = get_bloginfo('template_url') . "/images/front/setucocms/og_setuco.jpg";
+
+		if ( is_single() ) {
+			$meta['description'] = get_the_excerpt();
+			$meta['title'] = get_the_title() . " | " . $meta['title'];
+		}
+		elseif(is_tag()) {
+			$meta['title'] = $_GET['tag'] . "のタグがついている記事一覧 | " . $meta['title'];
+		}
+		elseif(is_search()) {
+			$meta['title'] = wp_specialchars($s, 1) . "の検索結果 | " . $meta['title'];
+		}
+		elseif(is_date()) {
+			$meta['title'] = get_the_date(‘Y/m’) . "の記事 | " . $meta['title'];
+		}
+		elseif(is_category()) {
+			$category = get_the_category();
+			var_dump($category->name);
+			$meta['title'] =  " | " . $meta['title'];
+		}
+	?>
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
 	<meta http-equiv="Content-Language" content="ja" />
 	<meta http-equiv="content-style-type" content="text/css" /> 
@@ -13,8 +40,8 @@
 	<meta name="generator" content="WordPress <?php bloginfo( 'version' ); ?>" /> 
 	<meta http-equiv="imagetoolbar" content="no" /> 
 
-	<meta name="description" content="<?php bloginfo('description'); ?>" /> 
-	<meta name="keywords" content="せつこ,俺だ,結婚,してくれ" /> 
+	<meta name="description" content="<?php echo $meta['description']; ?>" /> 
+	<meta name="keywords" content="setucocms,CMS,国産CMS,オープンソース,oss,せつこ,Webデザイン,ウェブサイト,制作,ホームページ,プログラミング" /> 
 
 	<link rel="start" href="<?php echo home_url( '/' ); ?>" title="このブログのトップページ" />
 	
@@ -23,12 +50,12 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 
-	<meta property="og:title" content="<?php echo bloginfo( 'name' ); ?>" />
+	<meta property="og:title" content="<?php echo $meta['title']; ?>" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/front/setucocms/og_setuco.jpg" />
+	<meta property="og:image" content="<?php echo $meta['og_image']; ?>" />
 	<meta property="og:url" content="<?php echo home_url( '/' ); ?>" />
-	<meta property="og:site_name" content="<?php echo bloginfo( 'name' ); ?>" />
-	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+	<meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>" />
+	<meta property="og:description" content="<?php echo $meta['description']; ?>" />
 	<meta property="fb:admins" content="100002075793566" />
 	<meta property="fb:app_id" content="317065731650807" />
 
@@ -39,7 +66,7 @@
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/base.js"></script>
 
-	<title><?php echo bloginfo( 'name' ); ?></title>
+	<title><?php echo $meta['title']; ?></title>
 </head>
 
 <body>
