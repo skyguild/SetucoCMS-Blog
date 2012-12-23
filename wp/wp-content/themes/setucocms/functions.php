@@ -239,7 +239,7 @@ add_filter( 'wp_page_menu_args', 'twentyten_page_menu_args' );
  * @return int
  */
 function twentyten_excerpt_length( $length ) {
-	return 40;
+	return 80;
 }
 add_filter( 'excerpt_length', 'twentyten_excerpt_length' );
 
@@ -250,8 +250,18 @@ add_filter( 'excerpt_length', 'twentyten_excerpt_length' );
  * @return string "Continue Reading" link
  */
 function twentyten_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyten' ) . '</a>';
+	return ' <a href="'. get_permalink() . '">' . " ..." . '</a>';
 }
+
+function new_excerpt_more($more) {
+  return ' ...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function new_excerpt_length($length) {
+  return 80;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
 
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and twentyten_continue_reading_link().
@@ -568,4 +578,3 @@ function custom_pagination($pages = '', $range = 2){
 		echo '</ul>';
 	}
 }
-

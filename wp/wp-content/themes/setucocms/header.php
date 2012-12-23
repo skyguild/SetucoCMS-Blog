@@ -11,7 +11,8 @@
 		$meta['og_image'] = get_bloginfo('template_url') . "/images/front/setucocms/og_setuco.jpg";
 
 		if ( is_single() ) {
-			$meta['description'] = get_the_excerpt();
+			the_post();
+			$meta['description'] = strip_tags( get_the_excerpt() );
 			$meta['title'] = get_the_title() . " | " . $meta['title'];
 		}
 		elseif(is_tag()) {

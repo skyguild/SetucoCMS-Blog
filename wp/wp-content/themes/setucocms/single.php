@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
-<?php while ( have_posts() ) : the_post(); ?>
-	<?php include("entry_parts.php"); ?>
-<?php endwhile; ?>
+
+<?php include("entry_parts.php"); ?>
 
 <!-- comment START --> 
 <div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry"><div class="entry">
