@@ -273,7 +273,7 @@ add_filter('excerpt_length', 'new_excerpt_length');
  * @return string An ellipsis
  */
 function twentyten_auto_excerpt_more( $more ) {
-	return ' &hellip;' . twentyten_continue_reading_link();
+	return ' ...;' . twentyten_continue_reading_link();
 }
 add_filter( 'excerpt_more', 'twentyten_auto_excerpt_more' );
 
