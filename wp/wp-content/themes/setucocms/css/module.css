@@ -187,7 +187,7 @@ div.entryHead dl.entryTags{
 	margin:15px 0;
 }
 div.entryHead dd.tag{
-	background-color:#eee;
+	background: url(../images/front/setucocms/bg_tag.gif) repeat-x 0 0;
 	margin-right:0;
 	margin-left:10px;
 	padding:10px;
