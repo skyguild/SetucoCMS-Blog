@@ -27,7 +27,7 @@
 					<div class="navList"> 
 						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_setucocms.png" alt="SetucoCMSって？" /></h3> 
 						<p><?php bloginfo('description'); ?></p>
-						<p class="linkText"><a href="http://setucocms.org" target="_blank">SetucoCMSプロジェクト</a></p>
+						<p class="linkText"><a href="http://setucocms.org" target="_blank" onclick="_gaq.push(['_trackEvent', 'サイト誘導', 'setucocms.org', 'サイドバー']);">SetucoCMSプロジェクト</a></p>
 					</div> 
 					<!-- navList END --> 
  
@@ -85,10 +85,11 @@
 								$posts = isset( $author_count[$author->ID] ) ? $author_count[$author->ID] : 0;
 
 								if ( $posts ){
+									$user_email = md5( strtolower( trim( "$author->user_email" ) ) );;
 									$output = "<li class='heightLineList'><a href='";
 									$output .= home_url();
 									$output .= "/?author=$author_id'>";
-									$output .= get_avatar( $author_id );
+									$output .= "<img src='http://www.gravatar.com/avatar/" . "$user_email" . "?d=mm' />";
 									$output .= "<br /><span>";
 									$output .= "$author->nickname";
 									$output .= "</span></a></li>";
@@ -105,9 +106,9 @@
 					<div class="navList"> 
 						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_link.png" alt="リンク" /></h3> 
 						<ul>
-							<li><a href="http://setucocms.org" target="_blank">SetucoCMSプロジェクト</a></li>
-							<li><a href="http://www.jec.ac.jp" target="_blank">日本電子専門学校</a></li>
-							<li><a href="http://penguin.jec.ac.jp/" target="_blank">日本電子専門学校電設部</a></li>
+							<li><a href="http://setucocms.org" target="_blank" onclick="_gaq.push(['_trackEvent', 'サイト誘導', 'setucocms.org', 'サイドバー（リンク集）']);">SetucoCMSプロジェクト</a></li>
+							<li><a href="http://www.jec.ac.jp" target="_blank" onclick="_gaq.push(['_trackEvent', 'サイト誘導', '日本電子専門学校', 'サイドバー（リンク集）']);">日本電子専門学校</a></li>
+							<li><a href="http://penguin.jec.ac.jp/" target="_blank" onclick="_gaq.push(['_trackEvent', 'サイト誘導', '電設部', 'サイドバー（リンク集）']);">日本電子専門学校電設部</a></li>
 						</ul>
 					</div> 
 					<!-- navList END --> 

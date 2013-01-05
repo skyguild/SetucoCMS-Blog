@@ -197,6 +197,7 @@ div.entryHead dd.tag{
 /*-- ENTRY BODY style -------------------------------------------*/
 /*---------------------------------------------------------------*/
 div.entryBody{
+	padding-bottom: 1px;
 }
 div.entryBody h3{
 	font-size:120%;

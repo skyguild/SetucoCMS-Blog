@@ -96,9 +96,9 @@
 				<h1><a href="<?php echo home_url( '/' ); ?>" tabindex="1"><?php echo bloginfo( 'name' ); ?></a></h1>
 				<p class="descript">日本電子専門学校電設部SetucoCMSプロジェクトです。</p> 
 				<ul class="utility">
-					<li><a href="<?php bloginfo( 'rss_url' ); ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/icn_rss.png" alt="RSS" class="rollover" /></a></li>
-					<li><a href="https://twitter.com/SetucoCMS" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/icn_twitter.png" alt="ツイッター" class="rollover" /></a></li>
-					<li><a href="https://www.facebook.com/SetucoCMS" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/icn_facebook.png" alt="フェイスブック" class="rollover" /></a></li>
+					<li><a href="<?php bloginfo( 'rss_url' ); ?>" target="_blank" onclick="_gaq.push(['_trackEvent', 'ファン獲得', 'RSSフィード', 'ヘッダー']);"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/icn_rss.png" alt="RSS" class="rollover" /></a></li>
+					<li><a href="https://twitter.com/SetucoCMS" target="_blank" onclick="_gaq.push(['_trackEvent', 'ファン獲得', 'Twitter', 'ヘッダー']);"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/icn_twitter.png" alt="ツイッター" class="rollover" /></a></li>
+					<li><a href="https://www.facebook.com/SetucoCMS" target="_blank" onclick="_gaq.push(['_trackEvent', 'ファン獲得', 'Facebook', 'ヘッダー']);"><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/icn_facebook.png" alt="フェイスブック" class="rollover" /></a></li>
 				</ul>
 			</div>
 		</header> 

@@ -75,7 +75,8 @@ pre{
 /*---------------------------------------------------------------*/
 div#wrapper{
 	width:90%;
-	width:960px;
+	min-width:960px;
+	max-width:1180px;
 	margin:0 auto;
 	text-align:left;
 }
