@@ -1,0 +1,278 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: g_analytics\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-24 15:57+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ivystar <info@ivystar.jp>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Japanese\n"
+"X-Poedit-Country: JAPAN\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: C:\\g_analytics\n"
+
+#: C:\g_analytics/g_analytics.php:63
+#: C:\g_analytics/g_analytics.php:324
+msgid "Top"
+msgstr "トップ"
+
+#: C:\g_analytics/g_analytics.php:64
+msgid "Daily Visitors"
+msgstr "日別アクセス数"
+
+#: C:\g_analytics/g_analytics.php:65
+msgid "Accessed by page number"
+msgstr "ページ別アクセス数"
+
+#: C:\g_analytics/g_analytics.php:66
+#: C:\g_analytics/g_analytics.php:562
+msgid "Referrer"
+msgstr "参照元"
+
+#: C:\g_analytics/g_analytics.php:67
+msgid "Keyword"
+msgstr "キーワード"
+
+#: C:\g_analytics/g_analytics.php:68
+msgid "Browser"
+msgstr "ブラウザ"
+
+#: C:\g_analytics/g_analytics.php:69
+#: C:\g_analytics/g_analytics.php:725
+msgid "Setup"
+msgstr "設定"
+
+#: C:\g_analytics/g_analytics.php:95
+#: C:\g_analytics/g_analytics.php:717
+#: C:\g_analytics/g_analytics.php:1057
+msgid "Login failure"
+msgstr "ログイン失敗"
+
+#: C:\g_analytics/g_analytics.php:155
+#: C:\g_analytics/g_analytics.php:539
+msgid "Preview"
+msgstr "プレビュー"
+
+#: C:\g_analytics/g_analytics.php:332
+msgid "Date"
+msgstr "日にち"
+
+#: C:\g_analytics/g_analytics.php:333
+msgid "Start Date"
+msgstr "開始日"
+
+#: C:\g_analytics/g_analytics.php:337
+msgid "End Date"
+msgstr "終了日"
+
+#: C:\g_analytics/g_analytics.php:341
+#: C:\g_analytics/g_analytics.php:456
+#: C:\g_analytics/g_analytics.php:807
+#: C:\g_analytics/g_analytics.php:829
+msgid "Visits"
+msgstr "セッション数"
+
+#: C:\g_analytics/g_analytics.php:342
+#: C:\g_analytics/g_analytics.php:359
+#: C:\g_analytics/g_analytics.php:376
+msgid "Total"
+msgstr "合計"
+
+#: C:\g_analytics/g_analytics.php:350
+#: C:\g_analytics/g_analytics.php:367
+#: C:\g_analytics/g_analytics.php:384
+msgid "Average"
+msgstr "平均"
+
+#: C:\g_analytics/g_analytics.php:358
+#: C:\g_analytics/g_analytics.php:455
+#: C:\g_analytics/g_analytics.php:526
+#: C:\g_analytics/g_analytics.php:563
+#: C:\g_analytics/g_analytics.php:806
+#: C:\g_analytics/g_analytics.php:841
+msgid "Pageviews"
+msgstr "ページビュー"
+
+#: C:\g_analytics/g_analytics.php:375
+#: C:\g_analytics/g_analytics.php:457
+#: C:\g_analytics/g_analytics.php:808
+#: C:\g_analytics/g_analytics.php:835
+msgid "Unique Users"
+msgstr "ユニークユーザー数"
+
+#: C:\g_analytics/g_analytics.php:392
+#: C:\g_analytics/g_analytics.php:871
+msgid "Bounce Rate"
+msgstr "直帰率"
+
+#: C:\g_analytics/g_analytics.php:404
+#: C:\g_analytics/g_analytics.php:851
+msgid "Average Pageviews"
+msgstr "平均ページビュー数"
+
+#: C:\g_analytics/g_analytics.php:416
+#: C:\g_analytics/g_analytics.php:861
+msgid "Time on Site"
+msgstr "平均サイト滞在時間"
+
+#: C:\g_analytics/g_analytics.php:520
+msgid "Today's popularity article"
+msgstr "今日の人気記事"
+
+#: C:\g_analytics/g_analytics.php:525
+msgid "Title"
+msgstr "タイトル"
+
+#: C:\g_analytics/g_analytics.php:556
+msgid "Today's referrer"
+msgstr "今日の参照元"
+
+#: C:\g_analytics/g_analytics.php:607
+msgid "3 Month ago"
+msgstr "3ヶ月前"
+
+#: C:\g_analytics/g_analytics.php:612
+msgid "1 Month ago"
+msgstr "1ヶ月前"
+
+#: C:\g_analytics/g_analytics.php:617
+msgid "1 Week ago"
+msgstr "1週間前"
+
+#: C:\g_analytics/g_analytics.php:623
+msgid "Last Month"
+msgstr "先月"
+
+#: C:\g_analytics/g_analytics.php:628
+msgid "This Month"
+msgstr "今月"
+
+#: C:\g_analytics/g_analytics.php:633
+msgid "Yesterday"
+msgstr "昨日"
+
+#: C:\g_analytics/g_analytics.php:638
+msgid "Today"
+msgstr "今日"
+
+#: C:\g_analytics/g_analytics.php:667
+msgid "\"Setup\" has no authority to change."
+msgstr "｢設定｣を変更する権限がありません。"
+
+#: C:\g_analytics/g_analytics.php:669
+msgid "Have the authority to change only administrator."
+msgstr "変更する権限があるのは管理者だけです。"
+
+#: C:\g_analytics/g_analytics.php:699
+msgid "A date of the counter start day is unjust."
+msgstr "カウンター開始日の日付が不正です。"
+
+#: C:\g_analytics/g_analytics.php:703
+msgid "I save the settings."
+msgstr "設定を保存しました。"
+
+#: C:\g_analytics/g_analytics.php:734
+msgid "Google Analytics for E-Mail Please enter your address. (Required)"
+msgstr "Google AnalyticsのE-Mailアドレスを入力してください。(必須)"
+
+#: C:\g_analytics/g_analytics.php:741
+msgid "Google Analytics Please enter your password. (Required)"
+msgstr "Google Analyticsのパスワードを入力してください。(必須)"
+
+#: C:\g_analytics/g_analytics.php:745
+msgid "Profile"
+msgstr "プロファイル"
+
+#: C:\g_analytics/g_analytics.php:762
+msgid "Please choose a profile. (Required)"
+msgstr "プロファイルを選択してください。(必須)"
+
+#: C:\g_analytics/g_analytics.php:766
+msgid "The start day of the counter"
+msgstr "カウンターの開始日"
+
+#: C:\g_analytics/g_analytics.php:769
+msgid "Please input a day to start the total of the counter."
+msgstr "カウンターの累計を開始する日を入力してください。"
+
+#: C:\g_analytics/g_analytics.php:770
+msgid "(example:2009-05-09)"
+msgstr "(例:2009-05-09)"
+
+#: C:\g_analytics/g_analytics.php:774
+msgid "Reading authority"
+msgstr "閲覧権限"
+
+#: C:\g_analytics/g_analytics.php:777
+msgid "Admin"
+msgstr "管理者"
+
+#: C:\g_analytics/g_analytics.php:778
+msgid "Editor"
+msgstr "編集者"
+
+#: C:\g_analytics/g_analytics.php:779
+msgid "Author"
+msgstr "作成者"
+
+#: C:\g_analytics/g_analytics.php:780
+msgid "Contributor"
+msgstr "寄稿者"
+
+#: C:\g_analytics/g_analytics.php:781
+msgid "Subscriber"
+msgstr "購読者"
+
+#: C:\g_analytics/g_analytics.php:786
+msgid "Google Analytics link path"
+msgstr "Google Analyticsのリンクパス"
+
+#: C:\g_analytics/g_analytics.php:789
+msgid "Please enter the Google Analytics link path."
+msgstr "Google Analyticsのリンクパスを入力してください。"
+
+#: C:\g_analytics/g_analytics.php:795
+msgid "Save Chenge"
+msgstr "変更を保存"
+
+#: C:\g_analytics/g_analytics.php:803
+msgid "I can display a counter on a theme in this plug in."
+msgstr "本プラグインではテーマにカウンターを表示することができます。"
+
+#: C:\g_analytics/g_analytics.php:804
+msgid "It is necessary to set it up on <code>&lt;?php ga_counter('pv'); ?&gt;</code> and a theme when I display it on a theme."
+msgstr "テーマに表示する場合は<code>&lt;?php ga_counter('pv'); ?&gt;</code>とテーマに設置する必要があります。"
+
+#: C:\g_analytics/g_analytics.php:805
+msgid "I can change the kind of the counter by changing an argument."
+msgstr "引数を変更することによりカウンターの種類を変更することができます。"
+
+#: C:\g_analytics/g_analytics.php:1166
+msgid "\"CURL\" no module."
+msgstr "｢CURL｣モジュールがありません。"
+
+#: C:\g_analytics/g_analytics.php:1170
+msgid "\"DOM\" no module."
+msgstr "｢DOMモジュールがありません｣"
+
+#~ msgid "Google Analytics profile, please enter your ID. (Required)"
+#~ msgstr "Google AnalyticsのプロファイルIDを入力してください。(必須)"
+#~ msgid ""
+#~ "Please refer to <a href=\"http://www.ivystar.jp/wordpress/google-analytics"
+#~ "%E3%81%AE%E3%83%97%E3%83%AD%E3%83%95%E3%82%A1%E3%82%A4%E3%83%ABid%E3%81%AE"
+#~ "%E7%A2%BA%E8%AA%8D%E6%96%B9%E6%B3%95/\">this place</a> about the detailed "
+#~ "explanation about the profile ID."
+#~ msgstr ""
+#~ "プロファイルIDについての詳細な説明については<a href=\"http://www.ivystar."
+#~ "jp/wordpress/google-analytics%E3%81%AE%E3%83%97%E3%83%AD%E3%83%95%E3%82%"
+#~ "A1%E3%82%A4%E3%83%ABid%E3%81%AE%E7%A2%BA%E8%AA%8D%E6%96%B9%E6%B3%95/\">こ"
+#~ "ちら</a>を参照ください。"
+#~ msgid "1 Day"
+#~ msgstr "1日"
+#~ msgid "New Visits"
+#~ msgstr "新規ユーザ"
+
