@@ -15,20 +15,20 @@
 			$meta['description'] = strip_tags( get_the_excerpt() );
 			$meta['title'] = get_the_title() . " | " . $meta['title'];
 		}
-		elseif(is_tag()) {
-			$meta['title'] = $_GET['tag'] . "のタグがついている記事一覧 | " . $meta['title'];
-		}
-		elseif(is_search()) {
-			$meta['title'] = wp_specialchars($s, 1) . "の検索結果 | " . $meta['title'];
-		}
-		elseif(is_date()) {
-			$meta['title'] = get_the_date(‘Y/m’) . "の記事 | " . $meta['title'];
-		}
-		elseif(is_category()) {
-			$category = get_the_category();
-			var_dump($category->name);
-			$meta['title'] =  " | " . $meta['title'];
-		}
+		// elseif(is_tag()) {
+		// 	$meta['title'] = $_GET['tag'] . "のタグがついている記事一覧 | " . $meta['title'];
+		// }
+		// elseif(is_search()) {
+		// 	$meta['title'] = wp_specialchars($s, 1) . "の検索結果 | " . $meta['title'];
+		// }
+		// elseif(is_date()) {
+		// 	$meta['title'] = get_the_date(‘Y/m’) . "の記事 | " . $meta['title'];
+		// }
+		// elseif(is_category()) {
+		// 	$category = get_the_category();
+		// 	var_dump($category->name);
+		// 	$meta['title'] =  " | " . $meta['title'];
+		// }
 	?>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
@@ -83,6 +83,7 @@
 
 	</script>
 
+<?php wp_head(); ?>
 </head>
 
 <body>

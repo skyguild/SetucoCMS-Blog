@@ -29,6 +29,7 @@
 	</div>
 	
 	<div class="entryBody">
+		<?php remove_filter ('the_content', 'wpautop'); ?>
 		<?php
 			if ( is_single() ) {
 				the_content();

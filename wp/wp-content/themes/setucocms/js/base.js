@@ -48,5 +48,6 @@ $(function(){
 	});
 
 	$("div.entryBody a[target='_blank']").addClass("blank_link");
+	$(".blank_link img").parent().removeClass("blank_link");
 
 });
