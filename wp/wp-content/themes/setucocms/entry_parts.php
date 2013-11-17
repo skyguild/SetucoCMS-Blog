@@ -28,7 +28,7 @@
 		</dl>
 	</div>
 	
-	<div class="entryBody">
+	<div class="entryBody entry-<?php the_ID(); ?>">
 		<?php remove_filter ('the_content', 'wpautop'); ?>
 		<?php
 			if ( is_single() ) {

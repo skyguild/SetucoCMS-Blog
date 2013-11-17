@@ -211,6 +211,9 @@ div.entryBody p + h3,
 div.entryBody span + h3{
 	margin-top: 15px;
 }
+div.entryBody code + h3{
+	margin-top: 30px;
+}
 div.entryBody h4{
 	font-size:110%;
 	margin-bottom:8px;
@@ -412,11 +415,11 @@ div.socialButton ul:after{
 /*---------------------------------------------------------------*/
 /*-- comment style ----------------------------------------------*/
 /*---------------------------------------------------------------*/
-div#comment > h2,
+div#comments > h2,
 div#respond > h3{
 	margin-bottom: 25px;
 }
-div#comment div.commentList{
+div#comments div.commentList{
 	zoom:100%;
 	margin-bottom: 30px;
 }

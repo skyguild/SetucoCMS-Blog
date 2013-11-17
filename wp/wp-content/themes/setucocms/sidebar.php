@@ -26,10 +26,14 @@
 					<!-- navList START --> 
 					<div class="navList"> 
 						<h3><img src="<?php bloginfo('template_url'); ?>/images/front/setucocms/h_nav_setucocms.png" alt="SetucoCMSって？" /></h3> 
-						<p><?php bloginfo('description'); ?></p>
+						<p style="margin-bottom:10px;"><?php bloginfo('description'); ?></p>
+
+						<iframe width="250" height="141" src="http://www.youtube.com/embed/Gxbnpu_GzlQ?rel=0" frameborder="0" allowfullscreen></iframe>
+
 						<p class="linkText"><a href="http://setucocms.org" target="_blank" onclick="_gaq.push(['_trackEvent', 'サイト誘導', 'setucocms.org', 'サイドバー']);">SetucoCMSプロジェクト</a></p>
 					</div> 
 					<!-- navList END --> 
+
  
 					<!-- navList START --> 
 					<!-- <div class="navList"> 
@@ -85,7 +89,7 @@
 								$posts = isset( $author_count[$author->ID] ) ? $author_count[$author->ID] : 0;
 
 								if ( $posts ){
-									$user_email = md5( strtolower( trim( "$author->user_email" ) ) );;
+									$user_email = md5( strtolower( trim( "$author->user_email" ) ) );
 									$output = "<li class='heightLineList'><a href='";
 									$output .= home_url();
 									$output .= "/?author=$author_id'>";
@@ -112,6 +116,13 @@
 						</ul>
 					</div> 
 					<!-- navList END --> 
+
+					<div class="likebox" style="margin:20px 0; background-color:#fff; padding:5px;"><fb:like-box href="https://www.facebook.com/SetucoCMS" width="240" height="285" show_faces="true" stream="false" border_color="#fff" header="false"></fb:like-box></div>
+
+					<div class="twitter_widget" style="margin-bottom:20px;"><a class="twitter-timeline" data-dnt="true" href="https://twitter.com/SetucoCMS" data-widget-id="303268976023179264">@SetucoCMS からのツイート</a></div>
+
+					<div class="g-plus" data-width="250" data-href="//plus.google.com/109905071534815268660" data-rel="publisher"></div>
+
 	 
 				 </div> 
 				<!-- navArea END --> 

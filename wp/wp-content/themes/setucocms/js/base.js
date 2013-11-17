@@ -37,7 +37,6 @@ $(function(){
 				row = 0;
 				_this.find(".row").height(maxHeight).removeClass('row');
 				maxHeight = 0;
-				console.log(maxHeight);
 			} else{
 				row++;
 			};
@@ -47,7 +46,16 @@ $(function(){
 
 	});
 
-	$("div.entryBody a[target='_blank']").addClass("blank_link");
+	$("div.entryBody a[target='_blank']").each(function(){
+		$(this).addClass("blank_link");
+		var entryTitle = $(this).closest(".entryBody").siblings(".entryHead").find("h2 span").text();
+		var entryID = $(this).closest(".entryBody").attr("class").replace("entryBody ", "");
+
+		var referrer = entryTitle + "[" + entryID + "]";
+		var linked = $(this).text() + "[" + $(this).attr("href") + "]" ;
+		$(this).attr("onclick", "_gaq.push(['_trackEvent', '外部サイト', 'リンク元：" + referrer + "', 'リンク先：" + linked + "']);");
+	});
+
 	$(".blank_link img").parent().removeClass("blank_link");
 
 });
