@@ -117,11 +117,11 @@
 					</div> 
 					<!-- navList END --> 
 
-					<div class="likebox" style="margin:20px 0; background-color:#fff; padding:5px;"><fb:like-box href="https://www.facebook.com/SetucoCMS" width="240" height="285" show_faces="true" stream="false" border_color="#fff" header="false"></fb:like-box></div>
+					<div class="likebox" style="margin:20px 0; background-color:#fff;"><fb:like-box href="https://www.facebook.com/SetucoCMS" width="250" height="285" show_faces="true" stream="false" border_color="#fff" header="false"></fb:like-box></div>
 
 					<div class="twitter_widget" style="margin-bottom:20px;"><a class="twitter-timeline" data-dnt="true" href="https://twitter.com/SetucoCMS" data-widget-id="303268976023179264">@SetucoCMS からのツイート</a></div>
 
-					<div class="g-plus" data-width="250" data-href="//plus.google.com/109905071534815268660" data-rel="publisher"></div>
+					<div class="g-page" data-width="250" data-href="https://plus.google.com/109905071534815268660" data-rel="publisher"></div>
 
 	 
 				 </div> 

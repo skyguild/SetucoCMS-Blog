@@ -395,9 +395,13 @@ div.entry div.socialButton ul{
 }
 div.entry div.socialButton ul li{
 	float:left;
+	width: auto;
 }
 div.entry div.socialButton ul li.twitter{
 	width:108px
+}
+div.entry div.socialButton ul li.hatena{
+	width:66px;
 }
 div.entry div.socialButton ul li.plusone{
 	width:80px;

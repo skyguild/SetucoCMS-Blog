@@ -57,8 +57,6 @@
 	<meta property="og:url" content="<?php echo home_url( '/' ); ?>" />
 	<meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>" />
 	<meta property="og:description" content="<?php echo $meta['description']; ?>" />
-	<meta property="fb:admins" content="100002075793566" />
-	<meta property="fb:app_id" content="317065731650807" />
 
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
